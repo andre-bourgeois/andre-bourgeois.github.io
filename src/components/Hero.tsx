@@ -49,6 +49,12 @@ const Hero = () => {
               >
                 Explore My Work
               </button>
+              <button 
+                onClick={scrollToContact}
+                className="text-foreground hover:text-primary transition-colors font-medium underline underline-offset-4"
+              >
+                Let's Connect
+              </button>
               <a 
                 href="#"
                 onClick={scrollToContact}
