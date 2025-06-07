@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* André Bourgeois Brand Color System */
+/* André Bourgeois Minimal Color System */
 
 @layer base {
   :root {
@@ -16,7 +16,7 @@
     --popover: 250 100% 98.4%;
     --popover-foreground: 249 67% 6.3%;
 
-    --primary: 181 99% 19%; /* Dark Teal #014D4E */
+    --primary: 249 67% 6.3%; /* Midnight Blue */
     --primary-foreground: 250 100% 98.4%;
 
     --secondary: 249 67% 6.3%;
@@ -25,15 +25,15 @@
     --muted: 249 20% 95%;
     --muted-foreground: 249 20% 45%;
 
-    --accent: 355 65% 45%; /* Soft Red #C22C38 */
+    --accent: 249 67% 6.3%; /* Midnight Blue */
     --accent-foreground: 250 100% 98.4%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 249 67% 6.3%;
     --destructive-foreground: 250 100% 98.4%;
 
     --border: 249 20% 90%;
     --input: 249 20% 90%;
-    --ring: 181 99% 19%;
+    --ring: 249 67% 6.3%;
 
     --radius: 0.5rem;
   }
@@ -48,24 +48,24 @@
     --popover: 249 67% 6.3%;
     --popover-foreground: 250 100% 98.4%;
 
-    --primary: 181 99% 19%;
-    --primary-foreground: 250 100% 98.4%;
+    --primary: 250 100% 98.4%;
+    --primary-foreground: 249 67% 6.3%;
 
-    --secondary: 181 99% 19%;
-    --secondary-foreground: 250 100% 98.4%;
+    --secondary: 250 100% 98.4%;
+    --secondary-foreground: 249 67% 6.3%;
 
     --muted: 249 20% 15%;
     --muted-foreground: 249 20% 65%;
 
-    --accent: 355 65% 45%;
-    --accent-foreground: 250 100% 98.4%;
+    --accent: 250 100% 98.4%;
+    --accent-foreground: 249 67% 6.3%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 250 100% 98.4%;
+    --destructive: 250 100% 98.4%;
+    --destructive-foreground: 249 67% 6.3%;
 
     --border: 249 20% 15%;
     --input: 249 20% 15%;
-    --ring: 181 99% 30%;
+    --ring: 250 100% 98.4%;
   }
 }
 
@@ -84,7 +84,7 @@
   }
 }
 
-/* Art Deco inspired geometric patterns */
+/* Minimal geometric patterns */
 @layer utilities {
   .geometric-pattern {
     background-image: 
@@ -102,10 +102,10 @@
     background-size: 40px 40px;
   }
 
-  .blueprint-grid-red {
+  .blueprint-grid-minimal {
     background-image: 
-      linear-gradient(to right, hsl(var(--accent) / 0.15) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--accent) / 0.15) 1px, transparent 1px);
+      linear-gradient(to right, hsl(var(--foreground) / 0.15) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--foreground) / 0.15) 1px, transparent 1px);
     background-size: 40px 40px;
   }
 }
