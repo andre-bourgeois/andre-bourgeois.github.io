@@ -21,9 +21,9 @@ const Hero = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="animate-fade-in text-left">
+        <div className="flex items-center justify-center">
+          {/* Centered Content */}
+          <div className="animate-fade-in text-center max-w-4xl">
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
               <span className="block">Solutions Architect</span>
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
 
             {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4 items-start">
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
               <button 
                 onClick={scrollToAbout}
                 className="bg-primary text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary/90 transition-all hover:scale-105 font-medium"
@@ -57,13 +57,6 @@ const Hero = () => {
               >
                 Let's Connect
               </a>
-            </div>
-          </div>
-
-          {/* Right Image Space */}
-          <div className="hidden lg:flex items-center justify-center">
-            <div className="w-full h-96 bg-muted/20 rounded-lg border-2 border-dashed border-muted-foreground/20 flex items-center justify-center">
-              <p className="text-muted-foreground">Image Placeholder</p>
             </div>
           </div>
         </div>
