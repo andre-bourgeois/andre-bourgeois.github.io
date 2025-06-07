@@ -40,16 +40,22 @@ const Navigation = () => {
               Thinking
             </button>
             <button 
-              onClick={() => scrollToSection('work')}
+              onClick={() => scrollToSection('professional')}
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
-              Work
+              Professional
             </button>
             <button 
-              onClick={() => scrollToSection('connect')}
+              onClick={() => scrollToSection('projects')}
+              className="text-foreground/80 hover:text-foreground transition-colors"
+            >
+              Projects
+            </button>
+            <button 
+              onClick={() => scrollToSection('contact')}
               className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
             >
-              Connect
+              Contact
             </button>
           </div>
 
@@ -79,16 +85,22 @@ const Navigation = () => {
                 Thinking
               </button>
               <button 
-                onClick={() => scrollToSection('work')}
+                onClick={() => scrollToSection('professional')}
                 className="text-left text-foreground/80 hover:text-foreground transition-colors"
               >
-                Work
+                Professional
               </button>
               <button 
-                onClick={() => scrollToSection('connect')}
+                onClick={() => scrollToSection('projects')}
+                className="text-left text-foreground/80 hover:text-foreground transition-colors"
+              >
+                Projects
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')}
                 className="text-left bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors w-fit"
               >
-                Connect
+                Contact
               </button>
             </div>
           </div>
