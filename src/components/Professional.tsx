@@ -25,7 +25,7 @@ const Professional = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Professional 
-            <span className="text-primary">Work</span>
+            <span className="text-primary"> Work</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Enterprise solutions that demonstrate technology's power to enhance spaces 

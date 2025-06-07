@@ -25,7 +25,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Personal 
-            <span className="text-primary">Projects</span>
+            <span className="text-primary"> Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Experimental and open-source projects that explore new possibilities 
