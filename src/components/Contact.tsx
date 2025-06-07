@@ -26,18 +26,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20" style={{ backgroundColor: '#0A0A0A' }}>
+    <section id="contact" className="py-20" style={{ backgroundColor: '#FFFAFA' }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#FFFAFA' }}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#0A0A0A' }}>
             Let's Talk
           </h2>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-8 bg-background rounded-lg p-8 shadow-lg">
+          <form onSubmit={handleSubmit} className="space-y-8 bg-foreground rounded-lg p-8 shadow-lg">
             <div>
-              <h3 className="text-xl font-semibold mb-4" style={{ color: '#0A0A0A' }}>Your Information</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <Label htmlFor="name" className="text-base font-medium">Name</Label>
@@ -70,7 +69,6 @@ const Contact = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4" style={{ color: '#0A0A0A' }}>Your Message</h3>
               <Label htmlFor="message" className="text-base font-medium">Message</Label>
               <Textarea
                 id="message"
@@ -89,11 +87,11 @@ const Contact = () => {
           </form>
 
           <div className="text-center mt-8">
-            <p className="mb-2" style={{ color: '#FFFAFA' }}>Prefer a direct contact?</p>
+            <p className="mb-2" style={{ color: '#0A0A0A' }}>Prefer a direct contact?</p>
             <a 
               href="mailto:hello@andrebourgeois.me"
               className="hover:opacity-80 transition-colors font-medium text-lg"
-              style={{ color: '#FFFAFA' }}
+              style={{ color: '#0A0A0A' }}
             >
               hello@andrebourgeois.me
             </a>
