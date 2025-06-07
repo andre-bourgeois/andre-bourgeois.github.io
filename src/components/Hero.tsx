@@ -14,7 +14,7 @@ const Hero = () => {
     <section id="hero" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Minimal Grid Background - No Transparency */}
       <div className="absolute inset-0">
-        <div className="blueprint-grid-minimal"></div>
+        <div className="blueprint-grid"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
@@ -23,8 +23,8 @@ const Hero = () => {
           <div className="animate-fade-in text-center max-w-4xl">
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              <span className="block">Good technology</span>
-              <span className="block text-primary">leaves no fingerprints.</span>
+              <span className="block">Good Technology</span>
+              <span className="block text-primary">Leaves No Fingerprints</span>
             </h1>
             
             {/* Philosophy Statement with Typing Animation */}
