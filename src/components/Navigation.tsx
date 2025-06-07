@@ -20,9 +20,13 @@ const Navigation = () => {
           {/* Logo */}
           <button 
             onClick={() => scrollToSection('hero')}
-            className="text-xl font-semibold tracking-tight hover:text-primary transition-colors"
+            className="hover:text-primary transition-colors"
           >
-            André Bourgeois
+            <img 
+              src="/logo-light.png" // or "/logo.png"
+              alt="André Bourgeois logo"
+              className="h-8 w-auto"
+            />
           </button>
 
           {/* Desktop Navigation */}
