@@ -103,11 +103,6 @@ export default {
 						'stroke-dasharray': '1000',
 						'stroke-dashoffset': '0'
 					}
-				},
-				'drift': {
-					'0%': { transform: 'translateX(-10px) translateY(0px)' },
-					'50%': { transform: 'translateX(10px) translateY(-5px)' },
-					'100%': { transform: 'translateX(-10px) translateY(0px)' }
 				}
 			},
 			animation: {
@@ -115,8 +110,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'slide-in-right': 'slide-in-right 0.4s ease-out',
-				'blueprint-draw': 'blueprint-draw 2s ease-in-out',
-				'drift': 'drift 4s ease-in-out infinite'
+				'blueprint-draw': 'blueprint-draw 2s ease-in-out'
 			}
 		}
 	},
