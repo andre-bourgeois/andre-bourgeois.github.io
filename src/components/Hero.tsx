@@ -26,8 +26,8 @@ const Hero = () => {
           <div className="animate-fade-in text-center max-w-4xl">
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              <span className="block">Good Technology</span>
-              <span className="block text-primary">Leaves No Fingerprints</span>
+              <span className="block">André</span>
+              <span className="block text-primary">Bourgeois</span>
             </h1>
             
             {/* Philosophy Statement with Typing Animation */}
@@ -50,6 +50,7 @@ const Hero = () => {
                 Explore My Work
               </button>
               <a 
+                href="#"
                 onClick={scrollToContact}
                 className="text-foreground hover:text-primary transition-colors font-medium underline underline-offset-4"
               >
