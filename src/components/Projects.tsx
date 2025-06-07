@@ -91,7 +91,7 @@ const Projects = () => {
           <p className="text-muted-foreground mb-6">
             Interested in collaborating on your next project?
           </p>
-          <button className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium">
+          <button className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3">
             Discuss Your Project
           </button>
         </div>
