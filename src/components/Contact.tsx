@@ -87,11 +87,11 @@ const Contact = () => {
           </form>
 
           <div className="text-center mt-8">
-            <p className="mb-2" style={{ color: '#FFFAFA' }}>Prefer a direct contact?</p>
+            <p className="mb-2" style={{ color: '#0A0A0A' }}>Prefer a direct contact?</p>
             <a 
               href="mailto:hello@andrebourgeois.me"
               className="hover:opacity-80 transition-colors font-medium text-lg"
-              style={{ color: '#FFFAFA' }}
+              style={{ color: '#0A0A0A' }}
             >
               hello@andrebourgeois.me
             </a>
