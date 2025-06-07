@@ -1,5 +1,6 @@
 
 import { ArrowDown } from 'lucide-react';
+import TypingAnimation from './TypingAnimation';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -22,10 +23,10 @@ const Hero = () => {
             <span className="block text-primary">Digital Innovator</span>
           </h1>
           
-          {/* Philosophy Statement */}
+          {/* Philosophy Statement with Typing Animation */}
           <div className="max-w-3xl mx-auto mb-8">
-            <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed">
-              Good technology leaves no fingerprints.
+            <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed min-h-[2.5rem]">
+              <TypingAnimation />
             </p>
             <p className="text-lg md:text-xl text-foreground/80 leading-relaxed">
               I design systems that disappear into experience—creating clarity and value 
