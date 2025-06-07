@@ -48,7 +48,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="mt-2"
-                    placeholder="Your full name"
+                    placeholder="Your Name"
                   />
                 </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="mt-2"
-                    placeholder="your.email@example.com"
+                    placeholder="your.email@website.com"
                   />
                 </div>
               </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="mt-2 min-h-[150px]"
-                placeholder="Tell me about your project or what you'd like to discuss..."
+                placeholder="I'd love to talk about..."
               />
             </div>
 
@@ -87,7 +87,7 @@ const Contact = () => {
           </form>
 
           <div className="text-center mt-8">
-            <p className="mb-2" style={{ color: '#0A0A0A' }}>Prefer a direct contact?</p>
+            <p className="mb-2 text-primary-foreground">Prefer a direct contact?</p>
             <a 
               href="mailto:hello@andrebourgeois.me"
               className="hover:opacity-80 transition-colors font-medium text-lg"
