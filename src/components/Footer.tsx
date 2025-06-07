@@ -3,12 +3,12 @@ import { Github, Linkedin, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border py-12 relative z-10">
+    <footer className="bg-card border-t border-border py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Left Column */}
           <div>
-            <h3 className="text-xl font-semibold mb-2" style={{ color: '#0A0A0A' }}>André Bourgeois</h3>
+            <h3 className="text-xl font-semibold mb-2">André Bourgeois</h3>
             <p className="text-muted-foreground">
               Solutions Architect & Digital Innovator
             </p>
