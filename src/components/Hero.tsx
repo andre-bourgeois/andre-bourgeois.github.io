@@ -37,7 +37,8 @@ const Hero = () => {
               </p>
               <p className="text-lg md:text-xl text-foreground leading-relaxed">
                 I design systems that blend quietly into the world around us - no spectacle, only impact.
-                <span className="text-bold">Good technology leaves no fingerprints.</span>
+                
+                <span className="font-bold">Good technology leaves no fingerprints.</span>
               </p>
             </div>
 
