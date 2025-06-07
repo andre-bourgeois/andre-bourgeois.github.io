@@ -52,14 +52,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <button 
-          onClick={scrollToAbout}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors animate-bounce"
-        >
-          <ArrowDown size={24} />
-        </button>
       </div>
 
       {/* Geometric Accent */}
