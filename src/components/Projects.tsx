@@ -99,15 +99,9 @@ const Projects = () => {
             Interested in collaborating on your next project?
           </p>
           <button
-            onClick={() => scrollToSection('contact')}
+            onClick={scrollToContact}
             className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
             Discuss Your Project
-          </button>
-          <button 
-                onClick={scrollToContact}
-                className="text-left bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors w-fit"
-              >
-                Contact
           </button>
         </div>
       </div>

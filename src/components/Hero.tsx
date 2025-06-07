@@ -50,7 +50,7 @@ const Hero = () => {
                 Explore My Work
               </button>
               <a 
-                href="#contact"
+                onClick={scrollToContact}
                 className="text-foreground hover:text-primary transition-colors font-medium underline underline-offset-4"
               >
                 Let's Connect
