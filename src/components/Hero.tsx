@@ -1,6 +1,7 @@
 
 import { ArrowDown } from 'lucide-react';
 import TypingAnimation from './TypingAnimation';
+import BackgroundParticles from './BackgroundParticles';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -19,6 +20,9 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-bl from-background/60 via-background/20 to-background/0"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-background/60 via-background/20 to-background/0"></div>
       </div>
+      
+      {/* Background Particles */}
+      <BackgroundParticles />
       
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
         <div className="flex items-center justify-center">
