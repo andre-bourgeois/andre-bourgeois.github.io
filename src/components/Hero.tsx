@@ -10,12 +10,15 @@ const Hero = () => {
     }
   };
 
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="hero" className="min-h-screen flex items-center relative overflow-hidden">
-      {/* Minimal Grid Background - No Transparency */}
-      <div className="absolute inset-0">
-        <div className="blueprint-grid"></div>
-      </div>
       
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
         <div className="flex items-center justify-center">
@@ -47,7 +50,7 @@ const Hero = () => {
                 Explore My Work
               </button>
               <a 
-                href="#connect"
+                href="#contact"
                 className="text-foreground hover:text-primary transition-colors font-medium underline underline-offset-4"
               >
                 Let's Connect

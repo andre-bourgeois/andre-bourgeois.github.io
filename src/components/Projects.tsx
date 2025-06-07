@@ -2,6 +2,13 @@
 import { ArrowRight, Cpu, Zap } from 'lucide-react';
 
 const Projects = () => {
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   const projects = [
     {
       title: "Distributed IoT Architecture",
@@ -97,7 +104,7 @@ const Projects = () => {
             Discuss Your Project
           </button>
           <button 
-                onClick={() => scrollToSection('contact')}
+                onClick={scrollToContact}
                 className="text-left bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors w-fit"
               >
                 Contact
