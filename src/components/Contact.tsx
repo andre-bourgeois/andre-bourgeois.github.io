@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-8 bg-background rounded-lg p-8 shadow-lg">
+          <form onSubmit={handleSubmit} className="space-y-8 bg-background rounded-lg p-8 shadow-lg border border-gray-300">
             <div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
