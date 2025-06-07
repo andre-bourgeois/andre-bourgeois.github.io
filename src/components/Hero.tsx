@@ -14,17 +14,14 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center relative overflow-hidden">
       {/* Minimal Grid Background with Gradient Fade */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-10">
         <div className="blueprint-grid-minimal opacity-30"></div>
         <div className="absolute inset-0 bg-gradient-to-br from-background/0 via-background/20 to-background/60"></div>
         <div className="absolute inset-0 bg-gradient-to-bl from-background/60 via-background/20 to-background/0"></div>
         <div className="absolute inset-0 bg-gradient-to-tr from-background/60 via-background/20 to-background/0"></div>
       </div>
       
-      {/* Background Particles */}
-      <BackgroundParticles />
-      
-      <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
+      <div className="max-w-7xl mx-auto px-6 w-full relative z-20">
         <div className="flex items-center justify-center">
           {/* Centered Content */}
           <div className="animate-fade-in text-center max-w-4xl">
