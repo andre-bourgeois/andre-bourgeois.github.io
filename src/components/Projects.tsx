@@ -91,7 +91,7 @@ const Projects = () => {
           <p className="text-muted-foreground mb-6">
             Interested in collaborating on your next project?
           </p>
-          <button className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium relative z-20 bg-[#FFFAFA]">
+          <button className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
             Discuss Your Project
           </button>
         </div>
