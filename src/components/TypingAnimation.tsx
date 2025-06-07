@@ -61,7 +61,7 @@ const TypingAnimation = () => {
   return (
     <span className="inline-block">
       {currentText}
-      <span className={`inline-block w-0.5 h-6 bg-primary ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>
+      <span className={`inline-block w-0.5 h-6 bg-primary ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>
         |
       </span>
     </span>
