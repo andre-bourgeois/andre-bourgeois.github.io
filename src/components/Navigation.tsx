@@ -25,7 +25,7 @@ const Navigation = () => {
             <img 
               src="/logo-light.png" // or "/logo.png"
               alt="André Bourgeois logo"
-              className="h-12 w-auto"
+              className="h-10 w-auto"
             />
           </button>
 
