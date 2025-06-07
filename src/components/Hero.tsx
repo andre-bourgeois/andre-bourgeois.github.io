@@ -36,8 +36,8 @@ const Hero = () => {
                 <TypingAnimation />
               </p>
               <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                I design systems that disappear into experience, creating clarity and value 
-                at the intersection of digital technology and our physical world.
+                I design systems that blend quietly into the world around us - no spectacle, only impact.
+                <span className="text-bold">Good technology leaves no fingerprints.</span>
               </p>
             </div>
 
