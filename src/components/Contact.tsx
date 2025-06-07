@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20" style={{ backgroundColor: '#FFFAFA' }}>
+    <section id="contact" className="py-20" }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#0A0A0A' }}>
