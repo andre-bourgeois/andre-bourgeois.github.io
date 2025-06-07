@@ -33,17 +33,18 @@ const BackgroundParticles = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+    <div className="fixed inset-0 pointer-events-none z-[1] overflow-hidden">
       {particles.map((particle) => (
         <div
           key={particle.id}
-          className="absolute rounded-full bg-foreground animate-drift"
+          className="absolute rounded-full animate-drift"
           style={{
             left: `${particle.x}%`,
             top: `${particle.y}%`,
             width: `${particle.size}px`,
             height: `${particle.size}px`,
             opacity: particle.opacity,
+            backgroundColor: '#0A0A0A',
             animationDelay: `${particle.id * 0.5}s`,
             animationDuration: `${particle.speed * 4}s`,
           }}
