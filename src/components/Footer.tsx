@@ -8,18 +8,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Left Column */}
           <div>
-            <h3 className="text-xl font-semibold mb-2">André Bourgeois</h3>
-            <p className="text-muted-foreground">
+            <h3 className="text-xl font-semibold mb-2" style={{ color: '#0A0A0A' }}>André Bourgeois</h3>
+            <p style={{ color: '#0A0A0A' }}>
               Solutions Architect & Digital Innovator
             </p>
           </div>
           
           {/* Middle Column */}
           <div className="flex flex-col items-center justify-center">
-            <p className="text-sm text-muted-foreground mb-2">
+            <p className="text-sm mb-2" style={{ color: '#0A0A0A' }}>
               © 2025 André Bourgeois. All rights reserved.
             </p>
-            <p className="text-muted-foreground">
+            <p style={{ color: '#0A0A0A' }}>
               "Good technology leaves no fingerprints."
             </p>
           </div>
@@ -28,21 +28,24 @@ const Footer = () => {
           <div className="flex justify-center md:justify-end items-center space-x-4">
             <a 
               href="#" 
-              className="text-muted-foreground hover:text-[#0077B5] transition-colors duration-200"
+              className="hover:text-[#0077B5] transition-colors duration-200"
+              style={{ color: '#0A0A0A' }}
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a 
               href="#" 
-              className="text-muted-foreground hover:text-[#FF0000] transition-colors duration-200"
+              className="hover:text-[#FF0000] transition-colors duration-200"
+              style={{ color: '#0A0A0A' }}
               aria-label="YouTube"
             >
               <Youtube size={24} />
             </a>
             <a 
               href="#" 
-              className="text-muted-foreground hover:text-[#FF6719] transition-colors duration-200"
+              className="hover:text-[#FF6719] transition-colors duration-200"
+              style={{ color: '#0A0A0A' }}
               aria-label="Substack"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -51,7 +54,8 @@ const Footer = () => {
             </a>
             <a 
               href="#" 
-              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+              className="hover:opacity-70 transition-colors duration-200"
+              style={{ color: '#0A0A0A' }}
               aria-label="GitHub"
             >
               <Github size={24} />

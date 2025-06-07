@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -25,10 +26,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-secondary text-secondary-foreground">
+    <section id="contact" className="py-20" style={{ backgroundColor: '#0A0A0A' }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#FFFAFA' }}>
             Let's Talk
           </h2>
         </div>
@@ -82,16 +83,16 @@ const Contact = () => {
               />
             </div>
 
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-medium">
+            <Button type="submit" className="w-full bg-primary hover:bg-primary text-primary-foreground py-3 text-lg font-medium">
               Send Message
             </Button>
           </form>
 
           <div className="text-center mt-8">
-            <p className="text-secondary-foreground/80 mb-2">Prefer a direct contact?</p>
+            <p className="mb-2" style={{ color: '#FFFAFA' }}>Prefer a direct contact?</p>
             <a 
               href="mailto:hello@andrebourgeois.me"
-              className="text-background hover:text-background/80 transition-colors font-medium text-lg"
+              className="hover:opacity-80 transition-colors font-medium text-lg"
               style={{ color: '#FFFAFA' }}
             >
               hello@andrebourgeois.me

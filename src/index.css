@@ -92,7 +92,6 @@
       linear-gradient(-45deg, hsl(var(--muted)) 25%, transparent 25%);
     background-size: 60px 60px;
     background-position: 0 0, 30px 30px;
-    opacity: 0.03;
   }
   
   .blueprint-grid {
