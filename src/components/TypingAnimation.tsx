@@ -4,10 +4,7 @@ import { useState, useEffect } from 'react';
 const TypingAnimation = () => {
   const phrases = [
     "Good technology leaves no fingerprints.",
-    "Buildings are products, not infrastructure.",
-    "Smart systems that actually make sense.",
-    "IoT solutions that disappear into experience.",
-    "Digital twins that mirror reality.",
+    "Buildings are products, not infrastructure.", 
     "Technology that serves humans, not the other way around."
   ];
 
@@ -23,14 +20,14 @@ const TypingAnimation = () => {
       if (currentText.length < currentPhrase.length) {
         const timeout = setTimeout(() => {
           setCurrentText(currentPhrase.slice(0, currentText.length + 1));
-        }, 50 + Math.random() * 50); // Variable typing speed
+        }, 80 + Math.random() * 40); // Slightly faster typing
         
         return () => clearTimeout(timeout);
       } else {
         // Finished typing, wait before starting to delete
         const timeout = setTimeout(() => {
           setIsTyping(false);
-        }, 2000);
+        }, 1800); // Pause after typing
         
         return () => clearTimeout(timeout);
       }
@@ -38,7 +35,7 @@ const TypingAnimation = () => {
       if (currentText.length > 0) {
         const timeout = setTimeout(() => {
           setCurrentText(currentText.slice(0, -1));
-        }, 30);
+        }, 50); // Faster deleting
         
         return () => clearTimeout(timeout);
       } else {
@@ -59,7 +56,7 @@ const TypingAnimation = () => {
   }, []);
 
   return (
-    <span className="inline-block">
+    <span className="inline-block cursor-default select-none">
       {currentText}
       <span className={`inline-block w-0.5 h-6 bg-primary ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>
         |
