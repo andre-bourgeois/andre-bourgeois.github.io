@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -36,7 +37,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-8 bg-background rounded-lg p-8 shadow-lg">
             <div>
-              <h3 className="text-xl font-semibold mb-4" style={{ color: '#A0A0A0' }}>Your Information</h3>
+              <h3 className="text-xl font-semibold mb-4">Your Information</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <Label htmlFor="name" className="text-base font-medium">Name</Label>
@@ -69,7 +70,7 @@ const Contact = () => {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-4" style={{ color: '#A0A0A0' }}>Your Message</h3>
+              <h3 className="text-xl font-semibold mb-4">Your Message</h3>
               <Label htmlFor="message" className="text-base font-medium">Message</Label>
               <Textarea
                 id="message"
