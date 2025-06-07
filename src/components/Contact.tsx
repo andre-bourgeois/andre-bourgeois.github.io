@@ -27,44 +27,50 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-secondary text-secondary-foreground">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Let's Talk
           </h2>
         </div>
 
-        <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6 bg-background rounded-lg p-8 shadow-lg">
+        <div className="max-w-4xl mx-auto">
+          <form onSubmit={handleSubmit} className="space-y-8 bg-background rounded-lg p-8 shadow-lg">
             <div>
-              <Label htmlFor="name" className="text-base font-medium">Name</Label>
-              <Input
-                id="name"
-                name="name"
-                type="text"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="mt-2"
-                placeholder="Your full name"
-              />
+              <h3 className="text-xl font-semibold mb-4">Your Information</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <Label htmlFor="name" className="text-base font-medium">Name</Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="mt-2"
+                    placeholder="Your full name"
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="email" className="text-base font-medium">Email Address</Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="mt-2"
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+              </div>
             </div>
 
             <div>
-              <Label htmlFor="email" className="text-base font-medium">Email Address</Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="mt-2"
-                placeholder="your.email@example.com"
-              />
-            </div>
-
-            <div>
+              <h3 className="text-xl font-semibold mb-4">Your Message</h3>
               <Label htmlFor="message" className="text-base font-medium">Message</Label>
               <Textarea
                 id="message"
@@ -72,7 +78,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="mt-2 min-h-[120px]"
+                className="mt-2 min-h-[150px]"
                 placeholder="Tell me about your project or what you'd like to discuss..."
               />
             </div>
@@ -86,7 +92,7 @@ const Contact = () => {
             <p className="text-secondary-foreground/80 mb-2">Prefer a direct contact?</p>
             <a 
               href="mailto:hello@andrebourgeois.me"
-              className="text-accent hover:text-accent/80 transition-colors font-medium text-lg"
+              className="text-background hover:text-background/80 transition-colors font-medium text-lg"
             >
               hello@andrebourgeois.me
             </a>

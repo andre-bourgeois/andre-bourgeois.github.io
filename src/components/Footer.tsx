@@ -19,7 +19,7 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground mb-2">
               © 2025 André Bourgeois. All rights reserved.
             </p>
-            <p className="text-muted-foreground italic">
+            <p className="text-muted-foreground">
               "Good technology leaves no fingerprints."
             </p>
           </div>
