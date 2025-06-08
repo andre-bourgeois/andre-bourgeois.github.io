@@ -1,4 +1,4 @@
-import { Building, Cpu, Lightbulb, Users, BrainCircuit, Glasses, Bot } from 'lucide-react';
+import { Building, Cpu, Lightbulb, Users, BrainCircuit, Workflow, Bot } from 'lucide-react';
 
 const About = () => {
   return (
@@ -45,18 +45,18 @@ const About = () => {
           {/* Expertise Grid */}
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <Cpu className="w-8 h-8 text-primary mb-4" />
-              <h3 className="font-semibold mb-2">Internet of Things</h3>
+              <Building className="w-8 h-8 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">Smart Buildings</h3>
               <p className="text-sm text-muted-foreground">
-                Creating connected ecosystems that turn data into actionable insights.
+                Designing intelligent systems that adapt to human needs and environmental conditions.
               </p>
             </div>
             
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <BrainCircuit className="w-8 h-8 text-primary mb-4" />
-              <h3 className="font-semibold mb-2">Artifical Intelligence</h3>
+              <Cpu className="w-8 h-8 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">Internet of Things</h3>
               <p className="text-sm text-muted-foreground">
-                Designing intelligent systems that adapt to human needs and environmental conditions.
+                Creating connected ecosystems that turn data into actionable insights.
               </p>
             </div>
 
@@ -64,15 +64,31 @@ const About = () => {
               <Bot className="w-8 h-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Robotics</h3>
               <p className="text-sm text-muted-foreground">
-                Exploring robotics, digital twins, and emerging technologies.
+                Researching autonomous coordination and control in multi-agent systems.
               </p>
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <Glasses className="w-8 h-8 text-primary mb-4" />
-              <h3 className="font-semibold mb-2">Mixed Reality</h3>
+              <BrainCircuit className="w-8 h-8 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">Artificial Intelligence</h3>
               <p className="text-sm text-muted-foreground">
-                Guiding teams and leaders through complex technology decisions.
+                Exploring the applications and impacts of generative and edge AI.
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Users className="w-8 h-8 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">Technology Leadership</h3>
+              <p className="text-sm text-muted-foreground">
+                Guiding teams and organisations through complex technology decisions.
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <Lightbulb className="w-8 h-8 text-primary mb-4" />
+              <h3 className="font-semibold mb-2">Innovation Strategy</h3>
+              <p className="text-sm text-muted-foreground">
+                Making sense of emerging technologies and their real-world impact.
               </p>
             </div>
           </div>
