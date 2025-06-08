@@ -17,13 +17,6 @@ const Projects = () => {
       tags: ["Edge Computing", "IoT Architecture", "Data Processing"],
       outcome: "99.9% uptime, sub-100ms response times"
     },
-    {
-      title: "Robotic Space Management System",
-      description: "Autonomous robots integrated with building systems for cleaning, security patrols, and inventory management in commercial spaces.",
-      icon: Zap,
-      tags: ["Robotics", "Automation", "Space Management"],
-      outcome: "60% operational cost reduction"
-    }
   ];
 
   return (

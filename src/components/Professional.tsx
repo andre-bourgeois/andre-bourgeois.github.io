@@ -10,13 +10,6 @@ const Professional = () => {
       tags: ["IoT", "Machine Learning", "Building Automation"],
       outcome: "32% energy reduction, 89% occupant satisfaction increase"
     },
-    {
-      title: "Digital Twin for Smart Manufacturing",
-      description: "Real-time digital replica of production facility enabling predictive maintenance and workflow optimization through sensor integration.",
-      icon: Monitor,
-      tags: ["Digital Twins", "Predictive Analytics", "Manufacturing"],
-      outcome: "45% reduction in unplanned downtime"
-    }
   ];
 
   return (
