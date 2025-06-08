@@ -1,5 +1,5 @@
 
-import { Building, Cpu, Lightbulb, Users, Brain-Circuit, Rectangle-Goggles, Bot} from 'lucide-react';
+import { Building, Cpu, Lightbulb, Users, BrainCircuit, RectangleGoggles, Bot} from 'lucide-react';
 
 const About = () => {
   return (
@@ -54,7 +54,7 @@ const About = () => {
             </div>
             
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <Brain-Circuit className="w-8 h-8 text-primary mb-4" />
+              <BrainCircuit className="w-8 h-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Artifical Intelligence</h3>
               <p className="text-sm text-muted-foreground">
                 Designing intelligent systems that adapt to human needs and environmental conditions.
@@ -70,7 +70,7 @@ const About = () => {
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <Rectangle-Goggles className="w-8 h-8 text-primary mb-4" />
+              <RectangleGoggles className="w-8 h-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Mixed Reality</h3>
               <p className="text-sm text-muted-foreground">
                 Guiding teams and leaders through complex technology decisions.
