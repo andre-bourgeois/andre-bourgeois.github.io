@@ -25,8 +25,8 @@ const Hero = () => {
           {/* Centered Content */}
           <div className="animate-fade-in text-center max-w-4xl">
             {/* Main Heading */}
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-tight mb-6">
-              <span className="block">André</span>
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
+              <span className="block">André Bourgeois</span>
               <span className="block text-primary">Bourgeois</span>
             </h1>
             
