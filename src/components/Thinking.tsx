@@ -9,24 +9,6 @@ const Thinking = () => {
       readTime: "8 min read",
       category: "Architecture"
     },
-    {
-      title: "The Invisible Interface: When IoT Gets It Right",
-      excerpt: "Exploring the design principles that make smart systems truly smart—by making them disappear entirely.",
-      readTime: "6 min read",
-      category: "IoT Design"
-    },
-    {
-      title: "Digital Twins in Practice: Beyond the Hype",
-      excerpt: "Real-world applications and lessons learned from implementing digital twin technology in commercial environments.",
-      readTime: "10 min read",
-      category: "Digital Twins"
-    },
-    {
-      title: "The Data-Driven Building: From Sensors to Insights",
-      excerpt: "How to transform building telemetry into actionable intelligence that improves both operations and occupant experience.",
-      readTime: "7 min read",
-      category: "Data Strategy"
-    }
   ];
 
   return (
@@ -34,7 +16,8 @@ const Thinking = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Thinking & Writing
+            Thinking & 
+            <span className="text-primary"> Writing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Exploring the intersection of technology, space, and human experience. 
