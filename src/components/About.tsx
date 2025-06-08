@@ -88,7 +88,7 @@ const About = () => {
               <Lightbulb className="w-8 h-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Innovation Strategy</h3>
               <p className="text-sm text-muted-foreground">
-                Making sense of emerging technologies and their real-world impact.
+                Making sense of emerging technology and its real-world opportunities.
               </p>
             </div>
           </div>
