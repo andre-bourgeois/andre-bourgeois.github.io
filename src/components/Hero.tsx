@@ -27,7 +27,7 @@ const Hero = () => {
             {/* Main Heading */}
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
               <span className="block">André Bourgeois</span>
-              <span className="block text-primary">Bourgeois</span>
+              
             </h1>
             
             {/* Philosophy Statement with Typing Animation */}
