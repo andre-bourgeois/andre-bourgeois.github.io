@@ -1,5 +1,5 @@
 
-import { Building, Cpu, Lightbulb, Users, BrainCircuit, RectangleGoggles, Bot} from 'lucide-react';
+import { Building, Cpu, Lightbulb, Users, BrainCircuit, RectangleGoggles, Bot } from 'lucide-react';
 
 const About = () => {
   return (
