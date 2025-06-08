@@ -37,8 +37,8 @@ const About = () => {
             <div className="mt-8">
               <h3 className="text-xl font-semibold mb-4">Core Philosophy</h3>
               <blockquote className="border-l-4 border-primary pl-6 text-lg italic text-foreground/90">
-                "When done well, technology disappears into the experience, 
-                creating clarity and value without drawing attention to itself."
+                "Good technology leaves no fingerprints. When designed, built, and implemented well,
+                technology disappears into the experience, creating clarity and value without drawing attention to itself."
               </blockquote>
             </div>
           </div>
