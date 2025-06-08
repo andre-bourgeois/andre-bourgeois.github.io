@@ -9,6 +9,12 @@ const Thinking = () => {
       readTime: "8 min read",
       category: "Architecture"
     },
+    {
+      title: "The Invisible Interface: When IoT Gets It Right",
+      excerpt: "Exploring the design principles that make smart systems truly smart—by making them disappear entirely.",
+      readTime: "6 min read",
+      category: "IoT Design"
+    },
   ];
 
   return (
