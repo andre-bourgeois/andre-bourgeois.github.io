@@ -8,7 +8,12 @@
 @layer base {
   :root {
     --background: 250 100% 98.4%; /* Snow White #FFFAFA */
-    --foreground: 0 0% 3.9%; /* Dark #0A0A0A */
+    --foreground: 0 0% 3.9%; /* Night Black #0A0A0A */
+
+    --brand-orange: 17 89% 54%; /* Vibrant Orange #F24F22 */
+    --brand-red: 356 84% 52%; /* Bold Red #ED1A25 */
+    --brand-purple: 272 53% 37%; /* Rich Purple #612D90 */
+    --brand-blue: 227 55% 41%; /* Strong Blue #314CA3 */
 
     --card: 250 100% 98.4%;
     --card-foreground: 0 0% 3.9%;
