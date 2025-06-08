@@ -16,7 +16,7 @@ const BackgroundParticles = () => {
   useEffect(() => {
     const generateParticles = () => {
       const newParticles: Particle[] = [];
-      for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 40; i++) {
         newParticles.push({
           id: i,
           x: Math.random() * 100,
