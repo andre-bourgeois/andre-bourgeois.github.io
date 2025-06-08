@@ -1,5 +1,4 @@
-
-import { Building, Cpu, Lightbulb, Users, BrainCircuit, RectangleGoggles, Bot } from 'lucide-react';
+import { Building, Cpu, Lightbulb, Users, BrainCircuit, Glasses, Bot } from 'lucide-react';
 
 const About = () => {
   return (
@@ -70,7 +69,7 @@ const About = () => {
             </div>
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <RectangleGoggles className="w-8 h-8 text-primary mb-4" />
+              <Glasses className="w-8 h-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Mixed Reality</h3>
               <p className="text-sm text-muted-foreground">
                 Guiding teams and leaders through complex technology decisions.
