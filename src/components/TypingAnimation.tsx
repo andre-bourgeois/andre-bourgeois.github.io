@@ -5,7 +5,7 @@ const TypingAnimation = () => {
     "Internet of Things",
     "Smart Buildings",
     "Robotics",
-    "Artificial Intelligence"
+    "Artificial Intelligence",
     "Technology Leadership",
     "Innovation Strategy"
   ];
