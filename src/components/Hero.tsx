@@ -36,8 +36,7 @@ const Hero = () => {
                 <TypingAnimation />
               </p>
               <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                  I design systems that blend quietly into the world around us - no spectacle, only impact. <br />
-                <span className="font-bold">Good technology leaves no fingerprints.</span>
+                  I design systems that blend quietly into the world around us - no spectacle, only impact.
               </p>
             </div>
 

@@ -2,9 +2,12 @@ import { useState, useEffect } from 'react';
 
 const TypingAnimation = () => {
   const phrases = [
-    "Solutions Architect.",
-    "Digital Innovator.",
-    "Technology Strategist."
+    "Internet of Things",
+    "Smart Buildings",
+    "Robotics",
+    "Artificial Intelligence"
+    "Technology Leadership",
+    "Innovation Strategy"
   ];
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
