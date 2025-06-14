@@ -44,7 +44,7 @@ const BackgroundParticles = () => {
             width: `${particle.size}px`,
             height: `${particle.size}px`,
             opacity: particle.opacity,
-            backgroundColor: '#314CA3',
+            backgroundColor: '#ED1A25',
             animationDelay: `${particle.id * 0.5}s`,
             animationDuration: `${particle.speed * 4}s`,
           }}
