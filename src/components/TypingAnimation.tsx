@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 
 const TypingAnimation = () => {
   const phrases = [
-    "Internet of Things",
     "Smart Buildings",
+    "Internet of Things",
     "Robotics",
     "Artificial Intelligence",
     "Technology Leadership",
