@@ -19,9 +19,6 @@ const Footer = () => {
             <p className="text-sm mb-2" style={{ color: '#0A0A0A' }}>
               © 2025 André Bourgeois. All rights reserved.
             </p>
-            <p style={{ color: '#0A0A0A' }}>
-              "Good technology leaves no fingerprints."
-            </p>
           </div>
           
           {/* Right Column - Social Icons */}
