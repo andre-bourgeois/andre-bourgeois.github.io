@@ -32,7 +32,7 @@ const Projects = () => {
             with emerging technology.
           </p>
         </div>
-        <div className="space-y-6 text-lg text-foreground leading-relaxed">
+        <div className="space-y-6 text-center text-lg text-foreground leading-relaxed">
           <p>
             Projects coming soon.
           </p>

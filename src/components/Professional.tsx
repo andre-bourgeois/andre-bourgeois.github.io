@@ -25,7 +25,7 @@ const Professional = () => {
             and experiences at scale.
           </p>
         </div>
-        <div className="space-y-6 text-lg text-foreground leading-relaxed">
+        <div className="space-y-6 text-center text-lg text-foreground leading-relaxed">
           <p>
             Case studies coming soon.
           </p>

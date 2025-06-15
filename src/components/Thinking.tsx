@@ -30,7 +30,7 @@ const Thinking = () => {
             Thoughts on building technology that serves people.
           </p>
         </div>
-        <div className="space-y-6 text-lg text-foreground leading-relaxed">
+        <div className="space-y-6 text-center text-lg text-foreground leading-relaxed">
           <p>
             Articles coming soon.
           </p>
