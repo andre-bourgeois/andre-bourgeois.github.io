@@ -30,7 +30,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="mt-10">
+            <div className="mt-8">
               <h3 className="text-xl font-semibold mb-4">Core Philosophy</h3>
               <blockquote className="border-l-4 border-primary pl-6 text-lg italic text-foreground/90">
               “True value from technology isn’t seen. It’s felt. It should shape spaces and experiences
@@ -40,7 +40,7 @@ const About = () => {
           </div>
 
           {/* Expertise Grid */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-10">
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <Building className="w-8 h-8 text-primary mb-4" />
               <h3 className="font-semibold mb-2">Smart Buildings</h3>
