@@ -25,7 +25,7 @@ const Professional = () => {
             and experiences at scale.
           </p>
         </div>
-
+        {/*
         <div className="space-y-8">
           {professionalWork.map((project, index) => (
             <div 
@@ -34,7 +34,7 @@ const Professional = () => {
             >
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8">
-                  {/* Icon and Title */}
+                  
                   <div className="flex items-start gap-6 lg:flex-1">
                     <div className="bg-primary/10 p-3 rounded-lg">
                       <project.icon className="w-8 h-8 text-primary" />
@@ -48,7 +48,7 @@ const Professional = () => {
                         {project.description}
                       </p>
                       
-                      {/* Tags */}
+                      
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag, tagIndex) => (
                           <span 
@@ -62,7 +62,7 @@ const Professional = () => {
                     </div>
                   </div>
 
-                  {/* Outcome and CTA */}
+                  
                   <div className="lg:w-80 space-y-4">
                     <div className="bg-muted/50 rounded-lg p-4">
                       <p className="text-sm font-medium text-primary mb-1">Key Outcome</p>
@@ -79,6 +79,7 @@ const Professional = () => {
             </div>
           ))}
         </div>
+        */}
       </div>
     </section>
   );

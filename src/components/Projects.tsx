@@ -29,10 +29,10 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Experimental and open-source projects that explore new possibilities 
-            in connected systems and automation.
+            in emerging technology.
           </p>
         </div>
-
+        {/*
         <div className="space-y-8">
           {projects.map((project, index) => (
             <div 
@@ -41,7 +41,7 @@ const Projects = () => {
             >
               <div className="p-8">
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8">
-                  {/* Icon and Title */}
+                  
                   <div className="flex items-start gap-6 lg:flex-1">
                     <div className="bg-primary/10 p-3 rounded-lg">
                       <project.icon className="w-8 h-8 text-primary" />
@@ -55,7 +55,7 @@ const Projects = () => {
                         {project.description}
                       </p>
                       
-                      {/* Tags */}
+                      
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag, tagIndex) => (
                           <span 
@@ -69,7 +69,7 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  {/* Outcome and CTA */}
+                  
                   <div className="lg:w-80 space-y-4">
                     <div className="bg-muted/50 rounded-lg p-4">
                       <p className="text-sm font-medium text-primary mb-1">Key Outcome</p>
@@ -86,6 +86,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+        */}
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-6">

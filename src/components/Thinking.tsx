@@ -27,10 +27,10 @@ const Thinking = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Exploring the intersection of technology, space, and human experience. 
-            Thoughts on building systems that serve people.
+            Thoughts on building technology that serves people.
           </p>
         </div>
-
+        {/*
         <div className="grid md:grid-cols-2 gap-8">
           {thoughts.map((thought, index) => (
             <article 
@@ -65,6 +65,7 @@ const Thinking = () => {
             </article>
           ))}
         </div>
+        */}
 
         <div className="text-center mt-12">
           <button className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
