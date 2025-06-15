@@ -25,21 +25,21 @@ const Footer = () => {
           <div className="flex justify-center md:justify-end items-center space-x-4">
             <a 
               href="#" 
-              className="text-[#0A0A0A] hover:text-[#0077B5] transition-colors duration-200"
+              className="text-[#0A0A0A] hover:text-[#314CA3] transition-colors duration-200"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a 
               href="#" 
-              className="text-[#0A0A0A] hover:text-[#FF0000] transition-colors duration-200"
+              className="text-[#0A0A0A] hover:text-[#ED1A25] transition-colors duration-200"
               aria-label="YouTube"
             >
               <Youtube size={24} />
             </a>
             <a 
               href="#" 
-              className="text-[#0A0A0A] hover:text-[#FF6719] transition-colors duration-200"
+              className="text-[#0A0A0A] hover:text-[#F24F22] transition-colors duration-200"
               aria-label="Substack"
             >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -48,7 +48,7 @@ const Footer = () => {
             </a>
             <a 
               href="#" 
-              className="text-[#0A0A0A] hover:opacity-70 transition-colors duration-200"
+              className="text-[#0A0A0A] hover:text-[#612D90] transition-colors duration-200"
               aria-label="GitHub"
             >
               <Github size={24} />
