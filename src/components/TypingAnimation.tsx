@@ -54,8 +54,7 @@ const TypingAnimation = () => {
   }, []);
 
   return (
-    <span className="inline-block cursor-default select-none text-[#ED1A25
-      ]">
+    <span className="inline-block cursor-default select-none text-[#ED1A25]">
       {currentText}
       <span className={`inline-block ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>
         |
