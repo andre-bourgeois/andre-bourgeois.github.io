@@ -25,6 +25,11 @@ const Professional = () => {
             and experiences at scale.
           </p>
         </div>
+        <div className="space-y-6 text-lg text-foreground leading-relaxed">
+          <p>
+            Case studies coming soon.
+          </p>
+        </div>
         {/*
         <div className="space-y-8">
           {professionalWork.map((project, index) => (

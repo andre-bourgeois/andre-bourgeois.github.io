@@ -32,6 +32,11 @@ const Projects = () => {
             with emerging technology.
           </p>
         </div>
+        <div className="space-y-6 text-lg text-foreground leading-relaxed">
+          <p>
+            Projects coming soon.
+          </p>
+        </div>
         {/*
         <div className="space-y-8">
           {projects.map((project, index) => (
