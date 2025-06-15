@@ -20,13 +20,13 @@ const About = () => {
               
               <p>
                 Today, the digital world is accelerating faster than the physical world can respond. My work lives at the intersection
-                of these worlds. I help organisations bridge the gap, transforming emerging technology into grounded, real-world outcomes.
+                of these worlds. <br /> I help organisations bridge the gap, transforming emerging technology into grounded, real-world outcomes.
               </p>
               
               <p>
                 When done right, this technology disappears into the experience, delivering value without drawing attention to itself.
                 Whether I’m shaping solutions with company leadership, building alongside tech teams, or exploring ideas through my own
-                research projects, my focus is always the same: building technology that quietly elevates the experience.
+                research, my focus is always the same: building technology that quietly elevates the experience.
               </p>
             </div>
 
@@ -34,7 +34,7 @@ const About = () => {
               <h3 className="text-xl font-semibold mb-4">Core Philosophy</h3>
               <blockquote className="border-l-4 border-primary pl-6 text-lg italic text-foreground/90">
               “True value from technology isn’t seen. It’s felt. It should shape spaces and experiences
-              without spectacle, and driving results that speak for themselves.”
+              without spectacle, and drive results that speak for themselves.”
               </blockquote>
             </div>
           </div>
