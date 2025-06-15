@@ -30,7 +30,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-10">
               <h3 className="text-xl font-semibold mb-4">Core Philosophy</h3>
               <blockquote className="border-l-4 border-primary pl-6 text-lg italic text-foreground/90">
               “True value from technology isn’t seen. It’s felt. It should shape spaces and experiences
