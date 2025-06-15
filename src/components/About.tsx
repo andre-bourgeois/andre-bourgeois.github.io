@@ -8,36 +8,33 @@ const About = () => {
           {/* Content */}
           <div className="animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Building the Future of 
-              <span className="text-primary block">Connected Spaces</span>
+              Connecting Innovation to Impact
             </h2>
             
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
               <p>
-                I believe buildings and businesses are <strong className="text-foreground">dynamic systems</strong>, 
-                not static infrastructure. They should be treated like products: constantly iterating, 
-                evolving, informed by data, and centered around the user.
+                Your built assets and business processes are <strong className="text-foreground">dynamic, living systems</strong>.
+                They're inseparable from the technology that fuels them and the people who use them. They need to evolve in ways
+                that are informed by data and centred around the user.
               </p>
               
               <p>
-                My work spans <strong className="text-primary">smart buildings</strong>, 
-                <strong className="text-primary"> IoT systems</strong>, and emerging technologies 
-                like robotics and digital twins. I help organizations understand and implement 
-                advanced technology that creates real value in real-world environments.
+                Today, the digital world is accelerating faster than the physical world can respond. My work lives at the intersection
+                of these worlds. I help organisations bridge the gap, transforming emerging technology into grounded, real-world outcomes.
               </p>
               
               <p>
-                Whether I'm architecting solutions for startup founders, advising CTOs, 
-                or collaborating with tech teams, my focus remains constant: technology 
-                that enhances without drawing attention to itself.
+                When done right, this technology disappears into the experience, delivering value without drawing attention to itself.
+                Whether I’m shaping solutions with company leadership, building alongside tech teams, or exploring ideas through my own
+                research projects, my focus is always the same: building technology that quietly elevates the experience.
               </p>
             </div>
 
             <div className="mt-8">
               <h3 className="text-xl font-semibold mb-4">Core Philosophy</h3>
               <blockquote className="border-l-4 border-primary pl-6 text-lg italic text-foreground/90">
-                "When done right technology disappears into the experience,
-                delivering value without drawing attention to itself."
+              “True value from technology isn’t seen. It’s felt. It should shape spaces and experiences
+              without spectacle, and driving results that speak for themselves.”
               </blockquote>
             </div>
           </div>
