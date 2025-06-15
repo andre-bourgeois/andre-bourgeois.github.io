@@ -29,7 +29,7 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Experimental and open-source projects that explore new possibilities 
-            in emerging technology.
+            with emerging technology.
           </p>
         </div>
         {/*
