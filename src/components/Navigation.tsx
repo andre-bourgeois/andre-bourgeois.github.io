@@ -23,7 +23,7 @@ const Navigation = () => {
             className="hover:text-primary transition-colors"
           >
             <img 
-              src="/logo-light.png" // or "/logo.png"
+              src="/logo-gradient.png" // or "/logo.png"
               alt="André Bourgeois logo"
               className="h-10 w-auto"
             />
