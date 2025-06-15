@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 
 const TypingAnimation = () => {
@@ -10,10 +11,20 @@ const TypingAnimation = () => {
     "Innovation Strategy"
   ];
 
+  const colors = [
+    "#F24F22", // brand-orange
+    "#ED1A25", // brand-red
+    "#612D90", // brand-purple
+    "#314CA3"  // brand-blue
+  ];
+
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
   const [showCursor, setShowCursor] = useState(true);
+
+  // Get current color based on phrase index
+  const currentColor = colors[currentPhraseIndex % colors.length];
 
   useEffect(() => {
     let timeout;
@@ -54,13 +65,15 @@ const TypingAnimation = () => {
   }, []);
 
   return (
-    <span className="inline-block cursor-default select-none text-[#314CA3]">
+    <span className="inline-block cursor-default select-none" style={{ color: currentColor }}>
       {currentText}
-      <span className={`inline-block ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}>
+      <span 
+        className={`inline-block ml-1 ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity duration-75`}
+        style={{ color: currentColor }}
+      >
         |
       </span>
     </span>
-
   );
 };
 
