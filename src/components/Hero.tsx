@@ -36,7 +36,7 @@ const Hero = () => {
                 <TypingAnimation />
               </p>
               <p className="text-lg md:text-xl text-foreground leading-relaxed">
-                  I design and implement technology that blends seamlessly into the world around us;
+                  I design technology that blends seamlessly into the world around us;
                   intentional, impactful, and invisible.
               </p>
             </div>
