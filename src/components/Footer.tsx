@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Right Column - Social Icons */}
           <div className="flex justify-center md:justify-end items-center space-x-4">
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/andrelbourgeois" 
               className="text-[#0A0A0A] hover:text-[#314CA3] transition-colors duration-200"
               aria-label="LinkedIn"
             >
@@ -47,7 +47,7 @@ const Footer = () => {
               </svg>
             </a>
             <a 
-              href="#" 
+              href="https://github.com/andre-bourgeois" 
               className="text-[#0A0A0A] hover:text-[#612D90] transition-colors duration-200"
               aria-label="GitHub"
             >
