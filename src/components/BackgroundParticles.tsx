@@ -30,7 +30,7 @@ const BackgroundParticles = () => {
           id: i,
           x: Math.random() * 100,
           y: Math.random() * 100,
-          size: Math.random() * 3 + 2, // 1-4px
+          size: Math.random() * 2 + 2, // 1-4px
           opacity: Math.random() * 0.3 + 0.2, // 0.1-0.4
           speed: Math.random() * 2 + 1, // 1-3
           color: colors[Math.floor(Math.random() * colors.length)], // Random color
