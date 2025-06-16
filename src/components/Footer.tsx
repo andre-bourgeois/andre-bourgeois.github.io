@@ -24,21 +24,24 @@ const Footer = () => {
           {/* Right Column - Social Icons */}
           <div className="flex justify-center md:justify-end items-center space-x-4">
             <a 
-              href="https://www.linkedin.com/in/andrelbourgeois" 
+              href="https://www.linkedin.com/in/andrelbourgeois"
+              target="_blank"
               className="text-[#0A0A0A] hover:text-[#314CA3] transition-colors duration-200"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
             <a 
-              href="#" 
+              href="#"
+              target="_blank"
               className="text-[#0A0A0A] hover:text-[#ED1A25] transition-colors duration-200"
               aria-label="YouTube"
             >
               <Youtube size={24} />
             </a>
             <a 
-              href="#" 
+              href="#"
+              target="_blank"
               className="text-[#0A0A0A] hover:text-[#F24F22] transition-colors duration-200"
               aria-label="Substack"
             >
@@ -47,7 +50,8 @@ const Footer = () => {
               </svg>
             </a>
             <a 
-              href="https://github.com/andre-bourgeois" 
+              href="https://github.com/andre-bourgeois"
+              target="_blank"
               className="text-[#0A0A0A] hover:text-[#612D90] transition-colors duration-200"
               aria-label="GitHub"
             >
