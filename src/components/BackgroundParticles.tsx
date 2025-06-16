@@ -8,10 +8,19 @@ interface Particle {
   size: number;
   opacity: number;
   speed: number;
+  color: string;
 }
 
 const BackgroundParticles = () => {
   const [particles, setParticles] = useState<Particle[]>([]);
+  
+  // Brand colors from your design system
+  const colors = [
+    '#F24F22', // Brand Orange
+    '#ED1A25', // Brand Red
+    '#612D90', // Brand Purple
+    '#314CA3', // Brand Blue
+  ];
 
   useEffect(() => {
     const generateParticles = () => {
@@ -24,6 +33,7 @@ const BackgroundParticles = () => {
           size: Math.random() * 3 + 1, // 1-4px
           opacity: Math.random() * 0.3 + 0.2, // 0.1-0.4
           speed: Math.random() * 2 + 1, // 1-3
+          color: colors[Math.floor(Math.random() * colors.length)], // Random color
         });
       }
       setParticles(newParticles);
@@ -44,7 +54,7 @@ const BackgroundParticles = () => {
             width: `${particle.size}px`,
             height: `${particle.size}px`,
             opacity: particle.opacity,
-            backgroundColor: '#652C8D',
+            backgroundColor: particle.color,
             animationDelay: `${particle.id * 0.5}s`,
             animationDuration: `${particle.speed * 4}s`,
           }}
