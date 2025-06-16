@@ -22,7 +22,7 @@ const BackgroundParticles = () => {
           x: Math.random() * 100,
           y: Math.random() * 100,
           size: Math.random() * 3 + 1, // 1-4px
-          opacity: Math.random() * 0.3 + 0.1, // 0.1-0.4
+          opacity: Math.random() * 0.3 + 0.2, // 0.1-0.4
           speed: Math.random() * 2 + 1, // 1-3
         });
       }
@@ -44,7 +44,7 @@ const BackgroundParticles = () => {
             width: `${particle.size}px`,
             height: `${particle.size}px`,
             opacity: particle.opacity,
-            backgroundColor: '#ED1A25',
+            backgroundColor: '#652C8D',
             animationDelay: `${particle.id * 0.5}s`,
             animationDuration: `${particle.speed * 4}s`,
           }}
