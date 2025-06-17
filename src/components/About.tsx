@@ -20,12 +20,12 @@ const About = () => {
               
               <p>
                 Today, the digital world is accelerating faster than the physical world can respond. My work lives at the intersection
-                of these worlds. <br /> I help organisations bridge the gap, transforming emerging technology into grounded, real-world outcomes.
+                of these worlds. I help organisations bridge the gap, transforming emerging technology into grounded, real-world outcomes.
               </p>
               
               <p>
                 When done right, this technology disappears into the experience, delivering value without drawing attention to itself.
-                Whether I’m shaping solutions with company leadership, building alongside tech teams, or exploring ideas through my own
+                Whether I’m shaping solutions with company leadership, building alongside engineering teams, or exploring ideas through my own
                 research, my focus is always the same: building technology that quietly elevates the experience.
               </p>
             </div>
