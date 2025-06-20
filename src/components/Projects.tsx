@@ -76,7 +76,8 @@ const Projects = () => {
                       <p className="text-sm font-medium text-primary mb-1">Key Outcome</p>
                       <p className="text-foreground font-semibold">{project.outcome}</p>
                     </div>
-                    <button className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3">
+                    <button onClick={() => window.open("https://github.com/andre-bourgeois/park-my-bike?tab=readme-ov-file", "_blank", "noopener,noreferrer")}
+                      className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3">
                       View Project
                       <ArrowRight size={16} />
                     </button>
