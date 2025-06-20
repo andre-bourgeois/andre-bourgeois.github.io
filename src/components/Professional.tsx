@@ -12,6 +12,8 @@ const Professional = () => {
     },
   ];
 
+  const tagColors = ['bg-[#F24F22]', 'bg-[#ED1A25]', 'bg-[#612D90]', 'bg-[#314CA3]'];
+
   return (
     <section id="professional" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -30,7 +32,7 @@ const Professional = () => {
             Case studies coming soon.
           </p>
         </div>
-        {/*
+        
         <div className="space-y-8">
           {professionalWork.map((project, index) => (
             <div 
@@ -58,7 +60,7 @@ const Professional = () => {
                         {project.tags.map((tag, tagIndex) => (
                           <span 
                             key={tagIndex}
-                            className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-medium"
+                            className={`${tagColors[tagIndex % tagColors.length]} text-white px-3 py-1 rounded-full text-sm font-medium`}
                           >
                             {tag}
                           </span>
@@ -69,9 +71,9 @@ const Professional = () => {
 
                   
                   <div className="lg:w-80 space-y-4">
-                    <div className="bg-muted/50 rounded-lg p-4">
-                      <p className="text-sm font-medium text-primary mb-1">Key Outcome</p>
-                      <p className="text-foreground font-semibold">{project.outcome}</p>
+                    <div className="bg-gradient-to-r from-[#612D90] to-[#314CA3] rounded-lg p-4">
+                      <p className="text-sm font-medium text-white mb-1">Key Outcome</p>
+                      <p className="text-white font-semibold">{project.outcome}</p>
                     </div>
                     
                     <button className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3">
@@ -84,7 +86,7 @@ const Professional = () => {
             </div>
           ))}
         </div>
-        */}
+        
       </div>
     </section>
   );

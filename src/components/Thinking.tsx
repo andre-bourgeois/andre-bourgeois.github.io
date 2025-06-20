@@ -17,6 +17,8 @@ const Thinking = () => {
     },
   ];
 
+  const tagColors = ['bg-[#F24F22]', 'bg-[#ED1A25]', 'bg-[#612D90]', 'bg-[#314CA3]'];
+
   return (
     <section id="thinking" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -35,16 +37,18 @@ const Thinking = () => {
             Articles coming soon.
           </p>
         </div>
-        {/*
+        
         <div className="grid md:grid-cols-2 gap-8">
           {thoughts.map((thought, index) => (
             <article 
               key={index}
               className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all hover:-translate-y-1 group cursor-pointer"
             >
-              <div className="flex items-center gap-2 text-sm text-primary mb-4">
-                <Book size={16} />
-                <span>{thought.category}</span>
+              <div className="flex items-center gap-2 text-sm mb-4">
+                <Book size={16} className="text-primary" />
+                <span className={`${tagColors[0]} text-white px-2 py-1 rounded-full text-xs font-medium`}>
+                  {thought.category}
+                </span>
                 <span className="text-muted-foreground">•</span>
                 <span className="text-muted-foreground">{thought.readTime}</span>
               </div>
@@ -77,7 +81,7 @@ const Thinking = () => {
             View All Articles
           </button>
         </div>
-        */}
+        
 
       </div>
     </section>
