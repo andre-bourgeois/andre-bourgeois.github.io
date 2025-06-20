@@ -11,11 +11,11 @@ const Projects = () => {
   
   const projects = [
     {
-      title: "Distributed IoT Architecture",
-      description: "Scalable edge computing framework for processing building telemetry data locally while maintaining cloud connectivity for insights.",
+      title: "Park My Bike",
+      description: "An edge-AI model designed to detect bicycles at bicycle bays with the goal of helping riders determine the location and amount of available parking.",
       icon: Cpu,
-      tags: ["Edge Computing", "IoT Architecture", "Data Processing"],
-      outcome: "99.9% uptime, sub-100ms response times"
+      tags: ["Edge Computing", "Object Detection", "IoT Architecture"],
+      outcome: "60% accuracy in properly detecting bicycles."
     },
   ];
 
@@ -33,11 +33,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="space-y-6 text-center text-lg text-foreground leading-relaxed">
-          <p>
-            Projects coming soon.
-          </p>
         </div>
-        {/*
         <div className="space-y-8">
           {projects.map((project, index) => (
             <div 
@@ -91,7 +87,6 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        */}
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-6">
