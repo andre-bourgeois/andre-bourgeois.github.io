@@ -12,8 +12,6 @@ const Professional = () => {
     },
   ];
 
-  const tagColors = ['bg-[#F24F22]', 'bg-[#ED1A25]', 'bg-[#612D90]', 'bg-[#314CA3]'];
-
   return (
     <section id="professional" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -43,8 +41,8 @@ const Professional = () => {
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8">
                   
                   <div className="flex items-start gap-6 lg:flex-1">
-                    <div className="bg-primary/10 p-3 rounded-lg">
-                      <project.icon className="w-8 h-8 text-primary" />
+                    <div className="bg-gradient-to-r from-[#F24F22]/20 via-[#ED1A25]/20 via-[#612D90]/20 to-[#314CA3]/20 p-3 rounded-lg">
+                      <project.icon className="w-8 h-8 bg-gradient-to-r from-[#F24F22] via-[#ED1A25] via-[#612D90] to-[#314CA3] bg-clip-text text-transparent" />
                     </div>
                     
                     <div className="flex-1">
@@ -60,7 +58,7 @@ const Professional = () => {
                         {project.tags.map((tag, tagIndex) => (
                           <span 
                             key={tagIndex}
-                            className={`${tagColors[tagIndex % tagColors.length]} text-white px-3 py-1 rounded-full text-sm font-medium`}
+                            className="bg-gradient-to-r from-[#F24F22]/10 via-[#ED1A25]/10 via-[#612D90]/10 to-[#314CA3]/10 border border-gradient-to-r border-[#F24F22]/20 text-foreground px-3 py-1 rounded-full text-sm font-medium"
                           >
                             {tag}
                           </span>
@@ -71,7 +69,7 @@ const Professional = () => {
 
                   
                   <div className="lg:w-80 space-y-4">
-                    <div className="bg-gradient-to-r from-[#612D90] to-[#314CA3] rounded-lg p-4">
+                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 rounded-lg p-4">
                       <p className="text-sm font-medium text-white mb-1">Key Outcome</p>
                       <p className="text-white font-semibold">{project.outcome}</p>
                     </div>

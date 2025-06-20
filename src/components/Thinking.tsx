@@ -17,8 +17,6 @@ const Thinking = () => {
     },
   ];
 
-  const tagColors = ['bg-[#F24F22]', 'bg-[#ED1A25]', 'bg-[#612D90]', 'bg-[#314CA3]'];
-
   return (
     <section id="thinking" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -45,8 +43,10 @@ const Thinking = () => {
               className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all hover:-translate-y-1 group cursor-pointer"
             >
               <div className="flex items-center gap-2 text-sm mb-4">
-                <Book size={16} className="text-primary" />
-                <span className={`${tagColors[0]} text-white px-2 py-1 rounded-full text-xs font-medium`}>
+                <div className="bg-gradient-to-r from-[#F24F22]/20 via-[#ED1A25]/20 via-[#612D90]/20 to-[#314CA3]/20 p-1 rounded">
+                  <Book size={16} className="bg-gradient-to-r from-[#F24F22] via-[#ED1A25] via-[#612D90] to-[#314CA3] bg-clip-text text-transparent" />
+                </div>
+                <span className="bg-gradient-to-r from-[#F24F22]/10 via-[#ED1A25]/10 via-[#612D90]/10 to-[#314CA3]/10 border border-gradient-to-r border-[#F24F22]/20 text-foreground px-2 py-1 rounded-full text-xs font-medium">
                   {thought.category}
                 </span>
                 <span className="text-muted-foreground">•</span>
