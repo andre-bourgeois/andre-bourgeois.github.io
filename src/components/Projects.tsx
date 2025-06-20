@@ -1,5 +1,6 @@
 
 import { ArrowRight, Cpu, Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const scrollToContact = () => {
@@ -12,10 +13,10 @@ const Projects = () => {
   const projects = [
     {
       title: "Park My Bike",
-      description: "An edge-AI model designed to detect bicycles at bicycle bays with the goal of helping riders determine the location and amount of available parking.",
+      description: "An edge-AI model designed to detect bicycles at bicycle bays, with the goal of helping riders determine the location and amount of available parking around London.",
       icon: Cpu,
       tags: ["Edge Computing", "Object Detection", "IoT Architecture"],
-      outcome: "60% accuracy in properly detecting bicycles."
+      outcome: "An object-detection model suitable for deployment onto edge devices."
     },
   ];
 
@@ -56,7 +57,6 @@ const Projects = () => {
                         {project.description}
                       </p>
                       
-                      
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag, tagIndex) => (
                           <span 
@@ -76,11 +76,13 @@ const Projects = () => {
                       <p className="text-sm font-medium text-primary mb-1">Key Outcome</p>
                       <p className="text-foreground font-semibold">{project.outcome}</p>
                     </div>
-                    
-                    <button className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3">
+                    <Link
+                      to="https://github.com/andre-bourgeois/park-my-bike?tab=readme-ov-file"
+                      className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3"
+                      >
                       View Project
                       <ArrowRight size={16} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
