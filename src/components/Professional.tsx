@@ -12,6 +12,16 @@ const Professional = () => {
     },
   ];
 
+  const getTagColor = (index: number) => {
+    const colors = [
+      { bg: 'bg-[#F24F22]/20', text: 'text-[#F24F22]', border: 'border-[#F24F22]/30' },
+      { bg: 'bg-[#ED1A25]/20', text: 'text-[#ED1A25]', border: 'border-[#ED1A25]/30' },
+      { bg: 'bg-[#612D90]/20', text: 'text-[#612D90]', border: 'border-[#612D90]/30' },
+      { bg: 'bg-[#314CA3]/20', text: 'text-[#314CA3]', border: 'border-[#314CA3]/30' }
+    ];
+    return colors[index % colors.length];
+  };
+
   return (
     <section id="professional" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -41,8 +51,8 @@ const Professional = () => {
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8">
                   
                   <div className="flex items-start gap-6 lg:flex-1">
-                    <div className="bg-gradient-to-r from-[#F24F22]/20 via-[#ED1A25]/20 via-[#612D90]/20 to-[#314CA3]/20 p-3 rounded-lg">
-                      <project.icon className="w-8 h-8 bg-gradient-to-r from-[#F24F22] via-[#ED1A25] via-[#612D90] to-[#314CA3] bg-clip-text text-transparent" />
+                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-3 rounded-lg">
+                      <project.icon className="w-8 h-8 text-white" />
                     </div>
                     
                     <div className="flex-1">
@@ -55,14 +65,17 @@ const Professional = () => {
                       
                       
                       <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tags.map((tag, tagIndex) => (
-                          <span 
-                            key={tagIndex}
-                            className="bg-gradient-to-r from-[#F24F22]/10 via-[#ED1A25]/10 via-[#612D90]/10 to-[#314CA3]/10 border border-gradient-to-r border-[#F24F22]/20 text-foreground px-3 py-1 rounded-full text-sm font-medium"
-                          >
-                            {tag}
-                          </span>
-                        ))}
+                        {project.tags.map((tag, tagIndex) => {
+                          const tagColor = getTagColor(tagIndex);
+                          return (
+                            <span 
+                              key={tagIndex}
+                              className={`${tagColor.bg} ${tagColor.text} border ${tagColor.border} px-3 py-1 rounded-full text-sm font-medium`}
+                            >
+                              {tag}
+                            </span>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>
