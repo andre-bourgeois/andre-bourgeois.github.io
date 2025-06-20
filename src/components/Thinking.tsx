@@ -43,7 +43,7 @@ const Thinking = () => {
               className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all hover:-translate-y-1 group cursor-pointer"
             >
               <div className="flex items-center gap-2 text-sm mb-4">
-                <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-1 rounded">
+                <div className="bg-gradient-to-r from-[#F24F22] via-[#ED1A25] via-[#612D90] to-[#314CA3] p-1 rounded">
                   <Book size={16} className="text-white" />
                 </div>
                 <span className="bg-[#F24F22]/20 text-[#F24F22] border border-[#F24F22]/30 px-2 py-1 rounded-full text-xs font-medium">

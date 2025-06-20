@@ -55,7 +55,7 @@ const Projects = () => {
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8">
                   
                   <div className="flex items-start gap-6 lg:flex-1">
-                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-3 rounded-lg">
+                    <div className="bg-gradient-to-r from-[#F24F22] via-[#ED1A25] via-[#612D90] to-[#314CA3] p-3 rounded-lg">
                       <project.icon className="w-8 h-8 text-white" />
                     </div>
                     
