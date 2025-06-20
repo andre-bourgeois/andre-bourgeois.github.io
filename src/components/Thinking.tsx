@@ -74,14 +74,13 @@ const Thinking = () => {
             </article>
           ))}
         </div>
-        */}
 
         <div className="text-center mt-12">
           <button className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
             View All Articles
           </button>
         </div>
-        
+        */}
           
       </div>
     </section>
