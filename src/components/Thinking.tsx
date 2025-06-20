@@ -35,7 +35,7 @@ const Thinking = () => {
             Articles coming soon.
           </p>
         </div>
-        
+        {/*
         <div className="grid md:grid-cols-2 gap-8">
           {thoughts.map((thought, index) => (
             <article 
@@ -74,7 +74,7 @@ const Thinking = () => {
             </article>
           ))}
         </div>
-        
+        */}
 
         <div className="text-center mt-12">
           <button className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
@@ -82,7 +82,7 @@ const Thinking = () => {
           </button>
         </div>
         
-
+          
       </div>
     </section>
   );

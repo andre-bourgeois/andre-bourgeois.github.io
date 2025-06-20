@@ -40,7 +40,7 @@ const Professional = () => {
             Case studies coming soon.
           </p>
         </div>
-        
+        {/* 
         <div className="space-y-8">
           {professionalWork.map((project, index) => (
             <div 
@@ -97,7 +97,7 @@ const Professional = () => {
             </div>
           ))}
         </div>
-        
+        */}
       </div>
     </section>
   );
