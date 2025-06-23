@@ -96,7 +96,7 @@ const Projects = () => {
                       <p className="text-sm font-medium text-white mb-1">Key Outcome</p>
                       <p className="text-white font-semibold">{project.outcome}</p>
                     </div>
-                    <button onClick={() => window.open("xxxx", "_blank", "noopener,noreferrer")}
+                    <button onClick={() => window.open(project.repo, "_blank", "noopener,noreferrer")}
                       className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3">
                       View Project
                       <ArrowRight size={16} />
