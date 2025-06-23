@@ -46,9 +46,9 @@ const Professional = () => {
             end and the experiences begin. If these problems were puzzles, they'd be all ocean.
             <br />
             <br />
-            I thrive on exploring these systems and experiences and understanding the real-world
-            applications of frontier technology. I live to solve the core problems we face every
-            day in the places we spend our lives.
+            As a Solutions Architect, I thrive on exploring these systems and experiences. I'm driven 
+            by my desire to understand the real-world applications of frontier technology. I live to 
+            solve the core problems we face every day in the places we spend our lives.
           </p>
         </div>
         {/* 
