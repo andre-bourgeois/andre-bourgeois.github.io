@@ -30,14 +30,25 @@ const Professional = () => {
             Professional 
             <span className="text-primary"> Work</span>
           </h2>
+          {/*
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Enterprise solutions that demonstrate technology's power to enhance spaces 
             and experiences at scale.
           </p>
+          */}
         </div>
-        <div className="space-y-6 text-center text-lg text-foreground leading-relaxed">
+        <div className="space-y-6 text-center text-lg text-foreground/80 leading-relaxed">
           <p>
-            Case studies coming soon.
+            For nearly a decade, I've built my career on the simple belief that organisations can 
+            understand their built assets and business processes like technology products. 
+            Technology has become such a fundamental driver in how organisations deliver value - 
+            to both their customers and employees - that it's difficult to tell where the systems 
+            end and the experiences begin. If these problems were puzzles, they'd be all ocean.
+            <br />
+            <br />
+            I thrive on exploring these systems and experiences and understanding the real-world
+            applications of frontier technology. I live to solve the core problems we face every
+            day in the places we spend our lives.
           </p>
         </div>
         {/* 
