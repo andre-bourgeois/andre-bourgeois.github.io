@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           
           {/* Middle Column */}
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center text-center">
             <p className="text-sm mb-2" style={{ color: '#0A0A0A' }}>
               © 2025 André Bourgeois. All rights reserved.
             </p>
