@@ -1,6 +1,7 @@
 
 import { ArrowRight, Building, Monitor } from 'lucide-react';
 
+{/*
 const Professional = () => {
   const professionalWork = [
     {
@@ -21,6 +22,7 @@ const Professional = () => {
     ];
     return colors[index % colors.length];
   };
+  */}
 
   return (
     <section id="professional" className="py-20">
@@ -44,8 +46,8 @@ const Professional = () => {
             Technology has become such a fundamental driver in how organisations deliver value - 
             to both their customers and employees - that it's difficult to tell where the systems 
             end and the experiences begin. If these problems were puzzles, they'd be all ocean.
-            <br />
-            <br />
+          </p>
+          <p>
             As a Solutions Architect, I thrive on exploring these systems and experiences. I'm driven 
             by my desire to understand the real-world applications of frontier technology. I live to 
             solve the core problems we face every day in the places we spend our lives.
