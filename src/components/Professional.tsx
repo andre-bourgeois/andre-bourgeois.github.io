@@ -55,11 +55,11 @@ const Professional = () => {
           </p>
           <p>
             More concretely, through my work as a Solutions Architect at Hereworks, I play a crucial 
-            role in the design and implementation of smart buildings; transforming traditional workplaces 
+            role in designing and implementing smart buildings, transforming traditional workplaces 
             into integrated, intelligent, and responsive environments. I translate high-level business 
-            objectives into actionable strategies and technology designs aligned with my clients' unique 
-            aspirations. My aim is to demystify the path to digital transformation and empower organisations 
-            to harness the full potential of informed and intentional technology investments. 
+            objectives into actionable strategies and technology designs aligned with my clients' 
+            unique aspirations. My aim is to demystify the path to digital transformation and empower 
+            organisations to harness the full potential of informed, intentional technology investments. 
           </p>
         </div>
         <div className="text-center mt-12">
