@@ -55,20 +55,9 @@ const Projects = () => {
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8">
                   
                   <div className="flex items-start gap-6 lg:flex-1">
-                    <div 
-                      className="w-14 h-14 rounded-lg flex items-center justify-center"
-                      style={{
-                        background: 'linear-gradient(to right, #F24F22, #ED1A25, #612D90, #314CA3)',
-                        WebkitMask: `url("data:image/svg+xml;utf8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="10" x="2" y="3" rx="2" ry="2"/><circle cx="18" cy="8" r="4"/></svg>')}")`,
-                        mask: `url("data:image/svg+xml;utf8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="10" x="2" y="3" rx="2" ry="2"/><circle cx="18" cy="8" r="4"/></svg>')}")`,
-                        WebkitMaskRepeat: 'no-repeat',
-                        maskRepeat: 'no-repeat',
-                        WebkitMaskPosition: 'center',
-                        maskPosition: 'center',
-                        WebkitMaskSize: '32px 32px',
-                        maskSize: '32px 32px'
-                      }}
-                    />
+                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-3 rounded-lg">
+                      <project.icon className="w-8 h-8 text-white" />
+                    </div>
                     
                     <div className="flex-1">
                       <h3 className="text-2xl font-semibold mb-3 group-hover:text-primary transition-colors">
@@ -96,7 +85,7 @@ const Projects = () => {
 
                   
                   <div className="lg:w-80 space-y-4">
-                    <div className="bg-gradient-to-r from-[#F24F22] via-[#ED1A25] via-[#612D90] to-[#314CA3] rounded-lg p-4">
+                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 rounded-lg p-4">
                       <p className="text-sm font-medium text-white mb-1">Key Outcome</p>
                       <p className="text-white font-semibold">{project.outcome}</p>
                     </div>
