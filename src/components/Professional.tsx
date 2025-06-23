@@ -1,8 +1,9 @@
 
 import { ArrowRight, Building, Monitor } from 'lucide-react';
 
-{/*
+
 const Professional = () => {
+  {/*
   const professionalWork = [
     {
       title: "Adaptive Building Intelligence Platform",
