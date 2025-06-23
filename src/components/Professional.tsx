@@ -54,6 +54,12 @@ const Professional = () => {
             solve the core problems we face every day in the places we spend our lives.
           </p>
         </div>
+        <div className="text-center mt-12">
+          <button onClick={() => window.open("https://www.linkedin.com/in/andrelbourgeois", "_blank", "noopener,noreferrer")}
+            className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
+            Learn More
+          </button>
+        </div>
         {/* 
         <div className="space-y-8">
           {professionalWork.map((project, index) => (
