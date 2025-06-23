@@ -43,9 +43,20 @@ const Thinking = () => {
               className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all hover:-translate-y-1 group cursor-pointer"
             >
               <div className="flex items-center gap-2 text-sm mb-4">
-                <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-1 rounded">
-                  <Book size={16} className="text-white" />
-                </div>
+                <div 
+                  className="w-8 h-8 rounded flex items-center justify-center"
+                  style={{
+                    background: 'linear-gradient(to right, #F24F22, #ED1A25, #612D90, #314CA3)',
+                    WebkitMask: `url("data:image/svg+xml;utf8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>')}")`,
+                    mask: `url("data:image/svg+xml;utf8,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>')}")`,
+                    WebkitMaskRepeat: 'no-repeat',
+                    maskRepeat: 'no-repeat',
+                    WebkitMaskPosition: 'center',
+                    maskPosition: 'center',
+                    WebkitMaskSize: '16px 16px',
+                    maskSize: '16px 16px'
+                  }}
+                />
                 <span className="bg-[#F24F22]/20 text-[#F24F22] border border-[#F24F22]/30 px-2 py-1 rounded-full text-xs font-medium">
                   {thought.category}
                 </span>
