@@ -42,7 +42,7 @@ const About = () => {
           <div className="grid grid-cols-2 gap-10">
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <img src="/icons/building-icon.png" alt="Building" className="w-8 h-8" />
+                <img src="/icons/building-icon.svg" alt="Building" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Smart Buildings</h3>
               <p className="text-sm text-muted-foreground">
@@ -52,7 +52,7 @@ const About = () => {
             
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <img src="/icons/cpu-icon.png" alt="CPU" className="w-8 h-8" />
+                <img src="/icons/cpu-icon.svg" alt="CPU" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Internet of Things</h3>
               <p className="text-sm text-muted-foreground">
@@ -62,7 +62,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <img src="/icons/bot-icon.png" alt="Robot" className="w-8 h-8" />
+                <img src="/icons/bot-icon.svg" alt="Robot" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Robotics</h3>
               <p className="text-sm text-muted-foreground">
@@ -72,7 +72,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <img src="/icons/brain-icon.png" alt="Brain" className="w-8 h-8" />
+                <img src="/icons/brain-icon.svg" alt="Brain" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Artificial Intelligence</h3>
               <p className="text-sm text-muted-foreground">
@@ -82,7 +82,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <img src="/icons/users-icon.png" alt="Users" className="w-8 h-8" />
+                <img src="/icons/users-icon.svg" alt="Users" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Technology Leadership</h3>
               <p className="text-sm text-muted-foreground">
@@ -92,7 +92,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <img src="/icons/bulb-icon.png" alt="Lightbulb" className="w-8 h-8" />
+                <img src="/icons/bulb-icon.svg" alt="Lightbulb" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Innovation Strategy</h3>
               <p className="text-sm text-muted-foreground">
