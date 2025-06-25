@@ -1,30 +1,7 @@
 
 import { ArrowRight, Building, Monitor } from 'lucide-react';
 
-
 const Professional = () => {
-  {/*
-  const professionalWork = [
-    {
-      title: "Adaptive Building Intelligence Platform",
-      description: "IoT-driven system that learns occupancy patterns and optimizes HVAC, lighting, and security in real-time. Deployed across 12 commercial buildings.",
-      icon: Building,
-      tags: ["IoT", "Machine Learning", "Building Automation"],
-      outcome: "32% energy reduction, 89% occupant satisfaction increase"
-    },
-  ];
-
-  const getTagColor = (index: number) => {
-    const colors = [
-      { bg: 'bg-[#F24F22]/20', text: 'text-[#F24F22]', border: 'border-[#F24F22]/30' },
-      { bg: 'bg-[#ED1A25]/20', text: 'text-[#ED1A25]', border: 'border-[#ED1A25]/30' },
-      { bg: 'bg-[#612D90]/20', text: 'text-[#612D90]', border: 'border-[#612D90]/30' },
-      { bg: 'bg-[#314CA3]/20', text: 'text-[#314CA3]', border: 'border-[#314CA3]/30' }
-    ];
-    return colors[index % colors.length];
-  };
-  */}
-
   return (
     <section id="professional" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -33,99 +10,50 @@ const Professional = () => {
             Professional 
             <span className="text-primary"> Work</span>
           </h2>
-          {/*
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Enterprise solutions that demonstrate technology's power to enhance spaces 
-            and experiences at scale.
-          </p>
-          */}
         </div>
-        <div className="space-y-6 text-center text-lg text-foreground/80 leading-relaxed">
-          <p>
-            For nearly a decade, I've built my career on the simple belief that organisations can 
-            understand their built assets and business processes like technology products. 
-            Technology has become such a fundamental driver in how organisations deliver value - 
-            to both their customers and employees - that it's difficult to tell where the systems 
-            end and the experiences begin. If these problems were puzzles, they'd be all ocean.
-          </p>
-          <p>
-            As a Solutions Architect, I thrive on exploring these systems and experiences. I'm driven 
-            by my desire to understand the real-world applications of frontier technology. I live to 
-            solve the core problems we face every day in the places we spend our lives.
-          </p>
-          <p>
-            More concretely, through my work as a Solutions Architect at Hereworks, I play a crucial 
-            role in designing and implementing smart buildings, transforming traditional workplaces 
-            into integrated, intelligent, and responsive environments. I translate high-level business 
-            objectives into actionable strategies and technology designs aligned with my clients' 
-            unique aspirations. My aim is to demystify the path to digital transformation and empower 
-            organisations to harness the full potential of informed, intentional technology investments. 
-          </p>
-        </div>
-        <div className="text-center mt-12">
-          <button onClick={() => window.open("https://www.linkedin.com/in/andrelbourgeois", "_blank", "noopener,noreferrer")}
-            className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
-            Learn More
-          </button>
-        </div>
-        {/* 
-        <div className="space-y-8">
-          {professionalWork.map((project, index) => (
-            <div 
-              key={index}
-              className="group bg-card border border-border rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="p-8">
-                <div className="flex flex-col lg:flex-row lg:items-center gap-8">
-                  
-                  <div className="flex items-start gap-6 lg:flex-1">
-                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-3 rounded-lg">
-                      <project.icon className="w-8 h-8 text-white" />
-                    </div>
-                    
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-semibold mb-3 group-hover:text-primary transition-colors">
-                        {project.title}
-                      </h3>
-                      <p className="text-foreground/80 leading-relaxed mb-4">
-                        {project.description}
-                      </p>
-                      
-                      
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tags.map((tag, tagIndex) => {
-                          const tagColor = getTagColor(tagIndex);
-                          return (
-                            <span 
-                              key={tagIndex}
-                              className={`${tagColor.bg} ${tagColor.text} border ${tagColor.border} px-3 py-1 rounded-full text-sm font-medium`}
-                            >
-                              {tag}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
-
-                  
-                  <div className="lg:w-80 space-y-4">
-                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 rounded-lg p-4">
-                      <p className="text-sm font-medium text-white mb-1">Key Outcome</p>
-                      <p className="text-white font-semibold">{project.outcome}</p>
-                    </div>
-                    
-                    <button className="w-full lg:w-auto bg-primary text-primary-foreground px-6 py-3 rounded-lg hover:bg-primary/90 transition-all font-medium flex items-center justify-center gap-2 group-hover:gap-3">
-                      View Case Study
-                      <ArrowRight size={16} />
-                    </button>
-                  </div>
-                </div>
-              </div>
+        
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Text Content - Left Aligned */}
+          <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
+            <p>
+              For nearly a decade, I've built my career on the simple belief that organisations can 
+              understand their built assets and business processes like technology products. 
+              Technology has become such a fundamental driver in how organisations deliver value - 
+              to both their customers and employees - that it's difficult to tell where the systems 
+              end and the experiences begin. If these problems were puzzles, they'd be all ocean.
+            </p>
+            <p>
+              As a Solutions Architect, I thrive on exploring these systems and experiences. I'm driven 
+              by my desire to understand the real-world applications of frontier technology. I live to 
+              solve the core problems we face every day in the places we spend our lives.
+            </p>
+            <p>
+              More concretely, through my work as a Solutions Architect at Hereworks, I play a crucial 
+              role in designing and implementing smart buildings, transforming traditional workplaces 
+              into integrated, intelligent, and responsive environments. I translate high-level business 
+              objectives into actionable strategies and technology designs aligned with my clients' 
+              unique aspirations. My aim is to demystify the path to digital transformation and empower 
+              organisations to harness the full potential of informed, intentional technology investments. 
+            </p>
+            
+            <div className="pt-6">
+              <button onClick={() => window.open("https://www.linkedin.com/in/andrelbourgeois", "_blank", "noopener,noreferrer")}
+                className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
+                Learn More
+              </button>
             </div>
-          ))}
+          </div>
+          
+          {/* Placeholder Image */}
+          <div className="relative">
+            <img 
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=center"
+              alt="Monitor showing programming interface"
+              className="rounded-lg shadow-xl w-full h-auto object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#F24F22]/20 via-transparent to-[#314CA3]/20 rounded-lg"></div>
+          </div>
         </div>
-        */}
       </div>
     </section>
   );
