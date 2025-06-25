@@ -11,7 +11,7 @@ const GradientDefs = () => (
   </defs>
 );
 
-// Custom Building Icon (simplified)
+// Building icon (Lucide React Building)
 const BuildingIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
@@ -23,14 +23,15 @@ const BuildingIcon = (props: React.SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <GradientDefs />
-    <rect x="3" y="9" width="18" height="12" />
-    <path d="M9 21V9" />
-    <path d="M15 21V9" />
-    <path d="M3 9L12 3L21 9" />
+    <path d="M3 22V10a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v12" />
+    <path d="M7 22v-4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v4" />
+    <path d="M12 14v-4" />
+    <path d="M10 22v-2" />
+    <path d="M14 22v-2" />
   </svg>
 );
 
-// Custom Cpu Icon
+// Cpu icon (Lucide React Cpu)
 const CpuIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
@@ -43,16 +44,20 @@ const CpuIcon = (props: React.SVGProps<SVGSVGElement>) => (
   >
     <GradientDefs />
     <rect x="7" y="7" width="10" height="10" rx="2" ry="2" />
-    <path d="M12 11v2" />
-    <path d="M11 12h2" />
-    <path d="M4 12h2" />
-    <path d="M18 12h2" />
-    <path d="M12 4v2" />
-    <path d="M12 18v2" />
+    <path d="M12 9v6" />
+    <path d="M9 12h6" />
+    <path d="M4 12h1" />
+    <path d="M19 12h1" />
+    <path d="M12 4v1" />
+    <path d="M12 19v1" />
+    <path d="M7 7l-1-1" />
+    <path d="M17 7l1-1" />
+    <path d="M7 17l-1 1" />
+    <path d="M17 17l1 1" />
   </svg>
 );
 
-// Custom Bot Icon (robot head simplified)
+// Bot icon (Lucide React Bot)
 const BotIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
@@ -64,15 +69,14 @@ const BotIcon = (props: React.SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <GradientDefs />
-    <rect x="7" y="7" width="10" height="10" rx="2" ry="2" />
-    <circle cx="9.5" cy="12" r="1" fill="url(#brand-gradient)" stroke="none" />
-    <circle cx="14.5" cy="12" r="1" fill="url(#brand-gradient)" stroke="none" />
-    <line x1="9" y1="16" x2="15" y2="16" />
-    <line x1="12" y1="7" x2="12" y2="5" />
+    <rect x="7" y="2" width="10" height="20" rx="5" ry="5" />
+    <circle cx="12" cy="14" r="4" />
+    <path d="M9 10h0" />
+    <path d="M15 10h0" />
   </svg>
 );
 
-// Custom BrainCircuit Icon (abstract neural network simplified)
+// BrainCircuit icon (Lucide React BrainCircuit)
 const BrainCircuitIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
@@ -84,17 +88,16 @@ const BrainCircuitIcon = (props: React.SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <GradientDefs />
-    <circle cx="12" cy="12" r="5" />
-    <line x1="12" y1="7" x2="12" y2="17" />
-    <line x1="7" y1="12" x2="17" y2="12" />
-    <circle cx="7" cy="7" r="1" fill="url(#brand-gradient)" stroke="none" />
-    <circle cx="17" cy="7" r="1" fill="url(#brand-gradient)" stroke="none" />
-    <circle cx="7" cy="17" r="1" fill="url(#brand-gradient)" stroke="none" />
-    <circle cx="17" cy="17" r="1" fill="url(#brand-gradient)" stroke="none" />
+    <path d="M9 2a7 7 0 0 0-7 7c0 3.5 2.5 5.5 4 7 1.5 1.5 4 3.5 4 3.5s2.5-2 4-3.5c1.5-1.5 4-3.5 4-7a7 7 0 0 0-7-7" />
+    <circle cx="9" cy="9" r="1" fill="url(#brand-gradient)" stroke="none" />
+    <circle cx="15" cy="9" r="1" fill="url(#brand-gradient)" stroke="none" />
+    <circle cx="12" cy="15" r="1" fill="url(#brand-gradient)" stroke="none" />
+    <path d="M9 9l3 6" />
+    <path d="M15 9l-3 6" />
   </svg>
 );
 
-// Custom Users Icon
+// Users icon (Lucide React Users)
 const UsersIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
@@ -106,13 +109,14 @@ const UsersIcon = (props: React.SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <GradientDefs />
-    <circle cx="9" cy="12" r="3" />
-    <circle cx="17" cy="12" r="3" />
-    <path d="M2 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2" />
+    <path d="M17 21v-2a4 4 0 0 0-3-3.87" />
+    <path d="M7 21v-2a4 4 0 0 1 3-3.87" />
+    <circle cx="9" cy="7" r="4" />
+    <circle cx="17" cy="7" r="4" />
   </svg>
 );
 
-// Custom Lightbulb Icon
+// Lightbulb icon (Lucide React Lightbulb)
 const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     viewBox="0 0 24 24"
