@@ -12,7 +12,7 @@ const Professional = () => {
           </h2>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Text Content - Left Aligned */}
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
@@ -35,24 +35,25 @@ const Professional = () => {
               unique aspirations. My aim is to demystify the path to digital transformation and empower 
               organisations to harness the full potential of informed, intentional technology investments. 
             </p>
-            
-            <div className="pt-6">
-              <button onClick={() => window.open("https://www.linkedin.com/in/andrelbourgeois", "_blank", "noopener,noreferrer")}
-                className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
-                Learn More
-              </button>
-            </div>
           </div>
           
           {/* Placeholder Image */}
-          <div className="relative">
+          <div className="relative h-full">
             <img 
               src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=center"
               alt="Monitor showing programming interface"
-              className="rounded-lg shadow-xl w-full h-auto object-cover"
+              className="rounded-lg shadow-xl w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-[#F24F22]/20 via-transparent to-[#314CA3]/20 rounded-lg"></div>
           </div>
+        </div>
+        
+        {/* Centered Learn More Button */}
+        <div className="flex justify-center mt-12">
+          <button onClick={() => window.open("https://www.linkedin.com/in/andrelbourgeois", "_blank", "noopener,noreferrer")}
+            className="border border-primary text-primary px-8 py-3 rounded-lg hover:bg-primary hover:text-primary-foreground transition-all font-medium bg-background">
+            Learn More
+          </button>
         </div>
       </div>
     </section>
