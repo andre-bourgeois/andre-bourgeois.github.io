@@ -37,7 +37,7 @@ const Professional = () => {
             </p>
           </div>
           
-          <div className="relative w-full aspect-[3/4] max-w-md mx-auto">
+          <div className="relative w-full aspect-[3/4] max-w-lg mx-auto">
             <img 
               src="/headshot.JPG"
               alt="Andre Bourgeois"
