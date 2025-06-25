@@ -1,17 +1,16 @@
 import React from 'react';
 
-const CpuIcon = (props: React.SVGProps<SVGSVGElement>) => (
+const CpuIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    strokeWidth={2}        // Slightly thicker stroke
-    strokeLinecap="round"    // Rounded line ends
-    strokeLinejoin="round"
     stroke="url(#brand-gradient)"
-    {...props}
+    strokeWidth={2.5}
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
     <defs>
       <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -22,23 +21,25 @@ const CpuIcon = (props: React.SVGProps<SVGSVGElement>) => (
       </linearGradient>
     </defs>
 
-    {/* Replace tiny stroke paths with circles for dots */}
-    <circle cx="12" cy="20" r="1" fill="url(#brand-gradient)" />
-    <circle cx="12" cy="4" r="1" fill="url(#brand-gradient)" />
-    <circle cx="17" cy="20" r="1" fill="url(#brand-gradient)" />
-    <circle cx="17" cy="4" r="1" fill="url(#brand-gradient)" />
-    <circle cx="2" cy="12" r="1" fill="url(#brand-gradient)" />
-    <circle cx="2" cy="17" r="1" fill="url(#brand-gradient)" />
-    <circle cx="2" cy="7" r="1" fill="url(#brand-gradient)" />
-    <circle cx="20" cy="12" r="1" fill="url(#brand-gradient)" />
-    <circle cx="20" cy="17" r="1" fill="url(#brand-gradient)" />
-    <circle cx="20" cy="7" r="1" fill="url(#brand-gradient)" />
-    <circle cx="7" cy="20" r="1" fill="url(#brand-gradient)" />
-    <circle cx="7" cy="4" r="1" fill="url(#brand-gradient)" />
+    {/* Pins */}
+    <path d="M12 20v2" />
+    <path d="M12 2v2" />
+    <path d="M17 20v2" />
+    <path d="M17 2v2" />
+    <path d="M2 12h2" />
+    <path d="M2 17h2" />
+    <path d="M2 7h2" />
+    <path d="M20 12h2" />
+    <path d="M20 17h2" />
+    <path d="M20 7h2" />
+    <path d="M7 20v2" />
+    <path d="M7 2v2" />
 
-    {/* Main rectangular shapes */}
-    <rect x="4" y="4" width="16" height="16" rx="2" stroke="url(#brand-gradient)" fill="none" />
-    <rect x="8" y="8" width="8" height="8" rx="1" stroke="url(#brand-gradient)" fill="none" />
+    {/* Outer square */}
+    <rect x="4" y="4" width="16" height="16" rx="2" />
+
+    {/* Inner square */}
+    <rect x="8" y="8" width="8" height="8" rx="1" />
   </svg>
 );
 
