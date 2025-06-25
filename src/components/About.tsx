@@ -4,13 +4,12 @@ import {
   Lightbulb,
   Users,
   BrainCircuit,
-  Workflow,
   Bot,
 } from 'lucide-react';
 
 const GradientIcon = ({ Icon }: { Icon: React.ElementType }) => (
-  <div className="w-8 h-8 bg-gradient-to-br from-[#F24F22] via-[#ED1A25] via-50% via-[#612D90] to-[#314CA3] mask-icon">
-    <Icon className="w-full h-full" />
+  <div className="w-8 h-8 text-transparent bg-clip-text bg-gradient-to-br from-[#F24F22] via-[#ED1A25] via-[#612D90] to-[#314CA3]">
+    <Icon className="w-full h-full" stroke="currentColor" strokeWidth={2} />
   </div>
 );
 
@@ -26,7 +25,8 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
               <p>
-                Your built assets and business processes are <strong className="text-[#ED1A25]">dynamic, living systems</strong>.
+                Your built assets and business processes are{' '}
+                <strong className="text-[#ED1A25]">dynamic, living systems</strong>.
                 They're inseparable from the technology that fuels them and the people who use them. They need to evolve in ways
                 that are informed by data and centred around the user.
               </p>
@@ -52,12 +52,12 @@ const About = () => {
           {/* Expertise Grid */}
           <div className="grid grid-cols-2 gap-10">
             {[
-              { icon: Building, title: "Smart Buildings", desc: "Designing intelligent systems that adapt to human needs and environmental conditions." },
-              { icon: Cpu, title: "Internet of Things", desc: "Creating connected ecosystems that turn data into actionable insights." },
-              { icon: Bot, title: "Robotics", desc: "Researching autonomous coordination and control in multi-agent systems." },
-              { icon: BrainCircuit, title: "Artificial Intelligence", desc: "Exploring the applications and impacts of generative and edge AI." },
-              { icon: Users, title: "Technology Leadership", desc: "Guiding teams and organisations through complex technology decisions." },
-              { icon: Lightbulb, title: "Innovation Strategy", desc: "Making sense of emerging technology and its real-world opportunities." }
+              { icon: Building, title: 'Smart Buildings', desc: 'Designing intelligent systems that adapt to human needs and environmental conditions.' },
+              { icon: Cpu, title: 'Internet of Things', desc: 'Creating connected ecosystems that turn data into actionable insights.' },
+              { icon: Bot, title: 'Robotics', desc: 'Researching autonomous coordination and control in multi-agent systems.' },
+              { icon: BrainCircuit, title: 'Artificial Intelligence', desc: 'Exploring the applications and impacts of generative and edge AI.' },
+              { icon: Users, title: 'Technology Leadership', desc: 'Guiding teams and organisations through complex technology decisions.' },
+              { icon: Lightbulb, title: 'Innovation Strategy', desc: 'Making sense of emerging technology and its real-world opportunities.' }
             ].map(({ icon, title, desc }, index) => (
               <div key={index} className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <div className="mb-4 w-fit">
@@ -70,15 +70,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      {/* Gradient mask CSS */}
-      <style jsx>{`
-        .mask-icon > svg {
-          mask: url(#mask);
-          -webkit-mask: url(#mask);
-          stroke: white;
-        }
-      `}</style>
     </section>
   );
 };
