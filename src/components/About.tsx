@@ -42,9 +42,21 @@ const About = () => {
 
           {/* Expertise Grid */}
           <div className="grid grid-cols-2 gap-10">
+            {/* Hidden SVG definitions for gradients */}
+            <svg className="absolute w-0 h-0">
+              <defs>
+                <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#F24F22" />
+                  <stop offset="33%" stopColor="#ED1A25" />
+                  <stop offset="66%" stopColor="#612D90" />
+                  <stop offset="100%" stopColor="#314CA3" />
+                </linearGradient>
+              </defs>
+            </svg>
+
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Building className="w-8 h-8 text-[#F24F22]" />
+                <Building className="w-8 h-8" style={{ stroke: 'url(#brand-gradient)' }} />
               </div>
               <h3 className="font-semibold mb-2">Smart Buildings</h3>
               <p className="text-sm text-muted-foreground">
@@ -54,7 +66,7 @@ const About = () => {
             
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Cpu className="w-8 h-8 text-[#ED1A25]" />
+                <Cpu className="w-8 h-8" style={{ stroke: 'url(#brand-gradient)' }} />
               </div>
               <h3 className="font-semibold mb-2">Internet of Things</h3>
               <p className="text-sm text-muted-foreground">
@@ -64,7 +76,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Bot className="w-8 h-8 text-[#612D90]" />
+                <Bot className="w-8 h-8" style={{ stroke: 'url(#brand-gradient)' }} />
               </div>
               <h3 className="font-semibold mb-2">Robotics</h3>
               <p className="text-sm text-muted-foreground">
@@ -74,7 +86,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <BrainCircuit className="w-8 h-8 text-[#314CA3]" />
+                <BrainCircuit className="w-8 h-8" style={{ stroke: 'url(#brand-gradient)' }} />
               </div>
               <h3 className="font-semibold mb-2">Artificial Intelligence</h3>
               <p className="text-sm text-muted-foreground">
@@ -84,7 +96,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Users className="w-8 h-8 text-[#F24F22]" />
+                <Users className="w-8 h-8" style={{ stroke: 'url(#brand-gradient)' }} />
               </div>
               <h3 className="font-semibold mb-2">Technology Leadership</h3>
               <p className="text-sm text-muted-foreground">
@@ -94,7 +106,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Lightbulb className="w-8 h-8 text-[#ED1A25]" />
+                <Lightbulb className="w-8 h-8" style={{ stroke: 'url(#brand-gradient)' }} />
               </div>
               <h3 className="font-semibold mb-2">Innovation Strategy</h3>
               <p className="text-sm text-muted-foreground">
