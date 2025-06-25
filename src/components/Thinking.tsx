@@ -31,7 +31,7 @@ const Thinking = () => {
           </p>
         </div>
         <div className="space-y-6 text-center text-lg text-foreground leading-relaxed">
-          <p>
+          <p className="text-[#ED1A25] font-medium">
             Articles coming soon.
           </p>
         </div>
