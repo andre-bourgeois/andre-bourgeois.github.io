@@ -46,10 +46,10 @@ const About = () => {
             <svg className="absolute w-0 h-0">
               <defs>
                 <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#F24F22" />
-                  <stop offset="33%" stopColor="#ED1A25" />
-                  <stop offset="66%" stopColor="#612D90" />
-                  <stop offset="100%" stopColor="#314CA3" />
+                  <stop offset="0%" stopColor="[#F24F22]/80" />
+                  <stop offset="33%" stopColor="[#ED1A25]/80" />
+                  <stop offset="66%" stopColor="[#612D90]/80" />
+                  <stop offset="100%" stopColor="[#314CA3]/80" />
                 </linearGradient>
               </defs>
             </svg>
