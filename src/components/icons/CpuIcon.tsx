@@ -7,7 +7,7 @@ const CpuIcon = (props: React.SVGProps<SVGSVGElement>) => (
     height="24"
     viewBox="0 0 24 24"
     fill="none"
-    strokeWidth={2.5}        // Slightly thicker stroke
+    strokeWidth={1.5}        // Slightly thicker stroke
     strokeLinecap="round"    // Rounded line ends
     strokeLinejoin="round"
     stroke="url(#brand-gradient)"
