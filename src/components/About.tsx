@@ -1,6 +1,45 @@
 import { Building, Cpu, Lightbulb, Users, BrainCircuit, Bot } from 'lucide-react';
 
 const About = () => {
+  const iconData = [
+    {
+      Icon: Building,
+      title: 'Smart Buildings',
+      description: 'Designing intelligent systems that adapt to human needs and environmental conditions.',
+      useFill: false,
+    },
+    {
+      Icon: Cpu,
+      title: 'Internet of Things',
+      description: 'Creating connected ecosystems that turn data into actionable insights.',
+      useFill: false,
+    },
+    {
+      Icon: Bot,
+      title: 'Robotics',
+      description: 'Researching autonomous coordination and control in multi-agent systems.',
+      useFill: true,
+    },
+    {
+      Icon: BrainCircuit,
+      title: 'Artificial Intelligence',
+      description: 'Exploring the applications and impacts of generative and edge AI.',
+      useFill: true,
+    },
+    {
+      Icon: Users,
+      title: 'Technology Leadership',
+      description: 'Guiding teams and organisations through complex technology decisions.',
+      useFill: false,
+    },
+    {
+      Icon: Lightbulb,
+      title: 'Innovation Strategy',
+      description: 'Making sense of emerging technology and its real-world opportunities.',
+      useFill: false,
+    },
+  ];
+
   return (
     <section id="about" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-6">
@@ -10,19 +49,19 @@ const About = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Connecting Innovation to Impact
             </h2>
-            
+
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
               <p>
                 Your built assets and business processes are <strong className="text-[#ED1A25]">dynamic, living systems</strong>.
                 They're inseparable from the technology that fuels them and the people who use them. They need to evolve in ways
                 that are informed by data and centred around the user.
               </p>
-              
+
               <p>
                 Today, the digital world is accelerating faster than the physical world can respond. My work lives at the intersection
                 of these worlds. I help organisations bridge the gap, transforming emerging technology into grounded, real-world outcomes.
               </p>
-              
+
               <p>
                 When done right, this technology disappears into the experience, delivering value without drawing attention to itself.
                 Whether I'm shaping solutions with company leadership, building alongside engineering teams, or exploring ideas through my own
@@ -57,38 +96,7 @@ const About = () => {
               </defs>
             </svg>
 
-            {[
-              {
-                Icon: Building,
-                title: 'Smart Buildings',
-                description: 'Designing intelligent systems that adapt to human needs and environmental conditions.',
-              },
-              {
-                Icon: Cpu,
-                title: 'Internet of Things',
-                description: 'Creating connected ecosystems that turn data into actionable insights.',
-              },
-              {
-                Icon: Bot,
-                title: 'Robotics',
-                description: 'Researching autonomous coordination and control in multi-agent systems.',
-              },
-              {
-                Icon: BrainCircuit,
-                title: 'Artificial Intelligence',
-                description: 'Exploring the applications and impacts of generative and edge AI.',
-              },
-              {
-                Icon: Users,
-                title: 'Technology Leadership',
-                description: 'Guiding teams and organisations through complex technology decisions.',
-              },
-              {
-                Icon: Lightbulb,
-                title: 'Innovation Strategy',
-                description: 'Making sense of emerging technology and its real-world opportunities.',
-              },
-            ].map(({ Icon, title, description }, idx) => (
+            {iconData.map(({ Icon, title, description, useFill }, idx) => (
               <div
                 key={idx}
                 className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"
@@ -96,22 +104,9 @@ const About = () => {
                 <div className="mb-4 w-fit">
                   <Icon
                     className="w-8 h-8"
-                    stroke="url(#icon-gradient)"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                  />
-                </div>
-                <h3 className="font-semibold mb-2">{title}</h3>
-                <p className="text-sm text-muted-foreground">{description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default About;
+                    {...(useFill
+                      ? { fill: 'url(#icon-gradient)', stroke: 'none' }
+                      : {
+                          stroke: 'url(#icon-gradient)',
+                          strokeWidth: 2,
+                          strokeLinecap
