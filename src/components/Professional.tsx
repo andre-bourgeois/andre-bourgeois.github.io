@@ -12,7 +12,7 @@ const Professional = () => {
           </h2>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content - Left Aligned */}
           <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
             <p>
@@ -37,7 +37,7 @@ const Professional = () => {
             </p>
           </div>
           
-          <div className="relative w-full aspect-[3/4] max-w-md mx-auto">
+          <div className="relative w-full aspect-[3/4] max-w-lg mx-auto">
             <img 
               src="/headshot.JPG"
               alt="Andre Bourgeois"
