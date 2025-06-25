@@ -40,7 +40,7 @@ const Professional = () => {
           {/* Placeholder Image */}
           <div className="relative h-full">
             <img 
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=center"
+              src="/headshot.jpg"
               alt="Monitor showing programming interface"
               className="rounded-lg shadow-xl w-full h-full object-cover"
             />
