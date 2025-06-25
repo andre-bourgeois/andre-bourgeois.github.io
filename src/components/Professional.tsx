@@ -37,9 +37,9 @@ const Professional = () => {
             </p>
           </div>
           
-          <div className="relative h-full min-h-[300px]">
+          <div className="relative w-full aspect-[3/4] max-w-sm mx-auto">
             <img 
-              src="/logo-gradient.png"
+              src="/headshot.JPG"
               alt="Andre Bourgeois"
               className="rounded-lg shadow-xl w-full h-full object-cover"
             />
