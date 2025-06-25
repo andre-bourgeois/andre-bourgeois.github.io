@@ -39,7 +39,7 @@ const Professional = () => {
           
           <div className="relative h-full min-h-[300px]">
             <img 
-              src="/headshot.jpg"
+              src="/logo-gradient.png"
               alt="Andre Bourgeois"
               className="rounded-lg shadow-xl w-full h-full object-cover"
             />
