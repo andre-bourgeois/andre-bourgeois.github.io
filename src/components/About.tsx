@@ -1,6 +1,4 @@
 
-import { Building, Cpu, Lightbulb, Users, BrainCircuit, Workflow, Bot } from 'lucide-react';
-
 const About = () => {
   return (
     <section id="about" className="py-20 relative">
@@ -44,7 +42,7 @@ const About = () => {
           <div className="grid grid-cols-2 gap-10">
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Building className="w-8 h-8 text-[#F24F22]" />
+                <img src="/icons/building-icon.png" alt="Building" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Smart Buildings</h3>
               <p className="text-sm text-muted-foreground">
@@ -54,7 +52,7 @@ const About = () => {
             
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Cpu className="w-8 h-8 text-[#ED1A25]" />
+                <img src="/icons/cpu-icon.png" alt="CPU" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Internet of Things</h3>
               <p className="text-sm text-muted-foreground">
@@ -64,7 +62,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Bot className="w-8 h-8 text-[#612D90]" />
+                <img src="/icons/bot-icon.png" alt="Robot" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Robotics</h3>
               <p className="text-sm text-muted-foreground">
@@ -74,7 +72,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <BrainCircuit className="w-8 h-8 text-[#314CA3]" />
+                <img src="/icons/brain-icon.png" alt="Brain" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Artificial Intelligence</h3>
               <p className="text-sm text-muted-foreground">
@@ -84,7 +82,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Users className="w-8 h-8 text-[#F24F22]" />
+                <img src="/icons/users-icon.png" alt="Users" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Technology Leadership</h3>
               <p className="text-sm text-muted-foreground">
@@ -94,7 +92,7 @@ const About = () => {
 
             <div className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
               <div className="mb-4 w-fit">
-                <Lightbulb className="w-8 h-8 text-[#ED1A25]" />
+                <img src="/icons/bulb-icon.png" alt="Lightbulb" className="w-8 h-8" />
               </div>
               <h3 className="font-semibold mb-2">Innovation Strategy</h3>
               <p className="text-sm text-muted-foreground">
