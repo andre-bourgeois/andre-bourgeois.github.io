@@ -37,11 +37,10 @@ const Professional = () => {
             </p>
           </div>
           
-          {/* Placeholder Image */}
-          <div className="relative h-full">
+          <div className="relative h-full min-h-[300px]">
             <img 
               src="/headshot.jpg"
-              alt="Monitor showing programming interface"
+              alt="Andre Bourgeois"
               className="rounded-lg shadow-xl w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-[#F24F22]/20 via-transparent to-[#314CA3]/20 rounded-lg"></div>
