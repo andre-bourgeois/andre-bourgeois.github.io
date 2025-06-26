@@ -8,13 +8,26 @@ const Projects = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // Color mapping for tag styling
+  const tagColorMap = {
+    orange: { bg: 'bg-[#F24F22]/20', text: 'text-[#F24F22]', border: 'border-[#F24F22]/30' },
+    red: { bg: 'bg-[#ED1A25]/20', text: 'text-[#ED1A25]', border: 'border-[#ED1A25]/30' },
+    purple: { bg: 'bg-[#612D90]/20', text: 'text-[#612D90]', border: 'border-[#612D90]/30' },
+    blue: { bg: 'bg-[#314CA3]/20', text: 'text-[#314CA3]', border: 'border-[#314CA3]/30' },
+    default: { bg: 'bg-gray-500/20', text: 'text-gray-500', border: 'border-gray-500/30' }
+  };
   
   const projects = [
     {
       title: "Park My Bike",
       description: "An edge-AI model designed to detect bicycles at bicycle bays, with the goal of helping riders determine the location and amount of available parking around London.",
       icon: Bike,
-      tags: ["Edge Computing", "Object Detection", "IoT Architecture"],
+      tags: [
+        { name: "Edge Computing", color: "orange" },
+        { name: "Object Detection", color: "red" },
+        { name: "IoT Architecture", color: "blue" }
+      ],
       outcome: "An object-detection model suitable for deployment onto edge devices.",
       repo: "https://github.com/andre-bourgeois/park-my-bike?tab=readme-ov-file"
     },
@@ -22,20 +35,24 @@ const Projects = () => {
       title: "IR Occupancy",
       description: "Testing the feasability of using infrared beam-break sensors for occupancy monitoring, in contrast to the expensive, AI-driven devices that are commonly used today.",
       icon: Zap,
-      tags: ["Custom PCB", "Occupancy Monitoring", "IoT Architecture"],
+      tags: [
+        { name: "Custom PCB", color: "purple" },
+        { name: "Occupancy Monitoring", color: "red" },
+        { name: "IoT Architecture", color: "blue" }
+      ],
       outcome: "A low-cost, off-the-shelf method of occupancy monitoring.",
       repo: "https://github.com/andre-bourgeois/ir-beam-break-occupancy-monitor"
     },
   ];
 
-  const getTagColor = (index: number) => {
-    const colors = [
-      { bg: 'bg-[#F24F22]/20', text: 'text-[#F24F22]', border: 'border-[#F24F22]/30' },
-      { bg: 'bg-[#ED1A25]/20', text: 'text-[#ED1A25]', border: 'border-[#ED1A25]/30' },
-      { bg: 'bg-[#612D90]/20', text: 'text-[#612D90]', border: 'border-[#612D90]/30' },
-      { bg: 'bg-[#314CA3]/20', text: 'text-[#314CA3]', border: 'border-[#314CA3]/30' }
-    ];
-    return colors[index % colors.length];
+  const getTagStyle = (tag) => {
+    // Support both string and object formats for backward compatibility
+    const colorKey = typeof tag === 'string' ? 'default' : (tag.color || 'default');
+    return tagColorMap[colorKey] || tagColorMap.default;
+  };
+
+  const getTagName = (tag) => {
+    return typeof tag === 'string' ? tag : tag.name;
   };
 
   return (
@@ -77,13 +94,13 @@ const Projects = () => {
                       
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tags.map((tag, tagIndex) => {
-                          const tagColor = getTagColor(tagIndex);
+                          const tagStyle = getTagStyle(tag);
                           return (
                             <span 
                               key={tagIndex}
-                              className={`${tagColor.bg} ${tagColor.text} border ${tagColor.border} px-3 py-1 rounded-full text-sm font-medium`}
+                              className={`${tagStyle.bg} ${tagStyle.text} border ${tagStyle.border} px-3 py-1 rounded-full text-sm font-medium`}
                             >
-                              {tag}
+                              {getTagName(tag)}
                             </span>
                           );
                         })}
