@@ -37,7 +37,7 @@ const Projects = () => {
       icon: Zap,
       tags: [
         { name: "Custom PCB", color: "purple" },
-        { name: "Occupancy Monitoring", color: "red" },
+        { name: "Occupancy Monitoring", color: "orange" },
         { name: "IoT Architecture", color: "blue" }
       ],
       outcome: "A low-cost, off-the-shelf method of occupancy monitoring.",
