@@ -25,8 +25,8 @@ const Projects = () => {
       icon: Bike,
       tags: [
         { name: "Edge Computing", color: "orange" },
-        { name: "Object Detection", color: "red" },
-        { name: "IoT Architecture", color: "blue" }
+        { name: "Object Detection", color: "blue" },
+        { name: "IoT Architecture", color: "red" }
       ],
       outcome: "An object-detection model suitable for deployment onto edge devices.",
       repo: "https://github.com/andre-bourgeois/park-my-bike?tab=readme-ov-file"
