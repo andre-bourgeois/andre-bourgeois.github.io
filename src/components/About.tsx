@@ -23,7 +23,7 @@ const About = () => {
               </p>
               
               <p>
-                When done right, this technology disappears into the experience, delivering value without drawing attention to itself.
+                When done right, <strong className="text-[#314CA3]">this technology disappears into the experience</strong>, delivering value without drawing attention to itself.
                 Whether I'm shaping solutions with company leadership, building alongside engineering teams, or exploring ideas through my own
                 research, my focus is always the same: building technology that quietly elevates the experience.
               </p>
