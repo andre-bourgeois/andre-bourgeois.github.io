@@ -63,7 +63,7 @@ const Projects = () => {
                 <div className="flex flex-col lg:flex-row lg:items-center gap-8">
                   
                   <div className="flex items-start gap-6 lg:flex-1">
-                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-3 rounded-lg">
+                    <div className="bg-gradient-to-br from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 p-3 rounded-lg">
                       <project.icon className="w-8 h-8 text-white" />
                     </div>
                     
@@ -92,7 +92,7 @@ const Projects = () => {
                   </div>
 
                   <div className="lg:w-80 space-y-4">
-                    <div className="bg-gradient-to-r from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 rounded-lg p-4">
+                    <div className="bg-gradient-to-br from-[#F24F22]/80 via-[#ED1A25]/80 via-[#612D90]/80 to-[#314CA3]/80 rounded-lg p-4">
                       <p className="text-sm font-medium text-white mb-1">Key Outcome</p>
                       <p className="text-white font-semibold">{project.outcome}</p>
                     </div>
