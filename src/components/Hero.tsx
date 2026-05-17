@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section id="hero" className="min-h-screen flex items-center relative overflow-hidden pt-20">
-      <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
+      <div className="max-w-6xl mx-auto px-6 w-full relative z-10">
         <div className="animate-fade-in max-w-4xl">
           <span className="eyebrow">01 · André Bourgeois</span>
 

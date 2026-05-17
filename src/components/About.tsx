@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div className="animate-fade-in">

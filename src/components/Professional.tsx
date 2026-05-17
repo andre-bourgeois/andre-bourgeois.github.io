@@ -2,7 +2,7 @@
 const Professional = () => {
   return (
     <section id="professional" className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="mb-16">
           <span className="eyebrow">03 · Professional work</span>
           <h2 className="text-3xl md:text-4xl font-bold">

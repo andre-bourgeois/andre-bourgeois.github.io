@@ -34,8 +34,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="border-t py-12 relative z-10" style={{ borderColor: 'var(--rule)' }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="border-t py-12 relative z-10 bg-background/65 backdrop-blur-md" style={{ borderColor: 'var(--rule)' }}>
+      <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
           {/* Brand */}
           <div>
@@ -56,7 +56,7 @@ const Footer = () => {
               className="text-sm"
               style={{ fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.04em', color: 'var(--ink-3)' }}
             >
-              © 2026 André Bourgeois. All rights reserved.
+              © 2026 André Bourgeois.<br />All rights reserved.
             </p>
           </div>
 

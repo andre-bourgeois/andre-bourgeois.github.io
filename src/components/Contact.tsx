@@ -51,7 +51,7 @@ const Contact = () => {
           </h2>
         </div>
 
-        <div className="max-w-4xl">
+        <div>
           <form
             onSubmit={handleSubmit}
             className="space-y-6 rounded-lg p-8 border"
