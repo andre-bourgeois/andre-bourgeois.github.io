@@ -56,7 +56,7 @@ const Footer = () => {
               className="text-sm"
               style={{ fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.04em', color: 'var(--ink-3)' }}
             >
-              © 2026 André Bourgeois.<br />All rights reserved.
+              © 2026 André Bourgeois.
             </p>
           </div>
 

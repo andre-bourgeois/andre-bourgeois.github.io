@@ -49,7 +49,7 @@ const Professional = () => {
           </div>
         </div>
 
-        <div className="flex justify-center mt-12">
+        <div className="mt-12">
           <button
             onClick={() => window.open("https://www.linkedin.com/in/andrelbourgeois", "_blank", "noopener,noreferrer")}
             className="px-8 py-3 rounded-lg text-base font-medium border transition-colors duration-200"
