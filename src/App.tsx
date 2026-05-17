@@ -4,7 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SupabaseProvider } from "@/providers/SupabaseProvider";
-import BackgroundParticles from "./components/BackgroundParticles";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
@@ -16,7 +15,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BackgroundParticles />
+        <div className="grid-bg" aria-hidden="true" />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />

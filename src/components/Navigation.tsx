@@ -13,51 +13,55 @@ const Navigation = () => {
     }
   };
 
+  const navLinks = [
+    { id: 'about',        label: 'About' },
+    { id: 'professional', label: 'Work' },
+    { id: 'projects',     label: 'Projects' },
+    { id: 'thinking',     label: 'Thinking' },
+  ];
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/65 backdrop-blur-md border-b border-border/60">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <button 
+          <button
             onClick={() => scrollToSection('hero')}
-            className="hover:text-primary transition-colors"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
-            <img 
-              src="/logo-gradient.png" // or "/logo.png"
+            <img
+              src="/logo-gradient.png"
               alt="André Bourgeois logo"
-              className="h-10 w-auto"
+              className="h-9 w-auto"
             />
+            <span
+              className="hidden sm:block text-sm font-semibold tracking-tight"
+              style={{ fontFamily: "'Space Grotesk', sans-serif", color: 'var(--ink-1)', letterSpacing: '-0.02em' }}
+            >
+              André Bourgeois
+            </span>
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-foreground/80 hover:text-foreground transition-colors"
-            >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection('thinking')}
-              className="text-foreground/80 hover:text-foreground transition-colors"
-            >
-              Thinking
-            </button>
-            <button 
-              onClick={() => scrollToSection('professional')}
-              className="text-foreground/80 hover:text-foreground transition-colors"
-            >
-              Professional
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="text-foreground/80 hover:text-foreground transition-colors"
-            >
-              Projects
-            </button>
-            <button 
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map(link => (
+              <button
+                key={link.id}
+                onClick={() => scrollToSection(link.id)}
+                className="text-sm transition-colors duration-150"
+                style={{ color: 'var(--ink-2)' }}
+                onMouseEnter={e => (e.currentTarget.style.color = 'var(--brass)')}
+                onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-2)')}
+              >
+                {link.label}
+              </button>
+            ))}
+            <button
               onClick={() => scrollToSection('contact')}
-              className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
+              className="text-sm font-medium px-4 py-2 rounded-md transition-colors duration-150"
+              style={{ background: 'var(--deep-teal)', color: 'var(--bone)' }}
+              onMouseEnter={e => (e.currentTarget.style.background = 'var(--slate-teal)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'var(--deep-teal)')}
             >
               Connect
             </button>
@@ -67,6 +71,7 @@ const Navigation = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2"
+            style={{ color: 'var(--ink-1)' }}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -75,36 +80,23 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
-            <div className="flex flex-col space-y-4">
-              <button 
-                onClick={() => scrollToSection('about')}
-                className="text-left text-foreground/80 hover:text-foreground transition-colors"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => scrollToSection('thinking')}
-                className="text-left text-foreground/80 hover:text-foreground transition-colors"
-              >
-                Thinking
-              </button>
-              <button 
-                onClick={() => scrollToSection('professional')}
-                className="text-left text-foreground/80 hover:text-foreground transition-colors"
-              >
-                Professional
-              </button>
-              <button 
-                onClick={() => scrollToSection('projects')}
-                className="text-left text-foreground/80 hover:text-foreground transition-colors"
-              >
-                Projects
-              </button>
-              <button 
+            <div className="flex flex-col gap-4">
+              {navLinks.map(link => (
+                <button
+                  key={link.id}
+                  onClick={() => scrollToSection(link.id)}
+                  className="text-left text-sm transition-colors duration-150"
+                  style={{ color: 'var(--ink-2)' }}
+                >
+                  {link.label}
+                </button>
+              ))}
+              <button
                 onClick={() => scrollToSection('contact')}
-                className="text-left bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors w-fit"
+                className="text-sm font-medium px-4 py-2 rounded-md w-fit transition-colors duration-150"
+                style={{ background: 'var(--deep-teal)', color: 'var(--bone)' }}
               >
-                Contact
+                Connect
               </button>
             </div>
           </div>

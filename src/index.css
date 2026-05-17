@@ -3,74 +3,103 @@
 @tailwind components;
 @tailwind utilities;
 
-/* André Bourgeois Minimal Color System */
+/* André Bourgeois — v2.2 Design System (off-white canvas + dusty plum pop) */
 
 @layer base {
   :root {
-    --background: 250 100% 98.4%; /* Snow White #FFFAFA */
-    --foreground: 0 0% 3.9%; /* Night Black #0A0A0A */
+    /* Tailwind/shadcn HSL tokens */
+    --background:        0 0% 98%;       /* bone #FAFAFA */
+    --foreground:        195 35% 9%;     /* ink-1 #0F1B1F */
 
-    --brand-orange: 17 89% 54%; /* Vibrant Orange #F24F22 */
-    --brand-red: 356 84% 52%; /* Bold Red #ED1A25 */
-    --brand-purple: 272 53% 37%; /* Rich Purple #612D90 */
-    --brand-blue: 227 55% 41%; /* Strong Blue #314CA3 */
+    --card:              0 0% 96%;       /* cream #F4F4F4 */
+    --card-foreground:   195 35% 9%;
 
-    --card: 250 100% 98.4%;
-    --card-foreground: 0 0% 3.9%;
+    --popover:           0 0% 96%;
+    --popover-foreground: 195 35% 9%;
 
-    --popover: 250 100% 98.4%;
-    --popover-foreground: 0 0% 3.9%;
+    --primary:           191 69% 13%;   /* deep-teal #0A2E36 */
+    --primary-foreground: 0 0% 98%;
 
-    --primary: 0 0% 3.9%; /* Dark #0A0A0A */
-    --primary-foreground: 250 100% 98.4%;
+    --secondary:         189 46% 22%;   /* slate-teal #1F4B53 */
+    --secondary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 62.7%;
-    --secondary-foreground: 250 100% 98.4%;
+    --muted:             0 0% 92%;      /* bone-200 #EAEAEA */
+    --muted-foreground:  189 8% 46%;    /* ink-3 #6B7B7E */
 
-    --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 45%;
+    --accent:            188 17% 44%;   /* mist-teal #5C7E83 */
+    --accent-foreground: 0 0% 98%;
 
-    --accent: 0 0% 3.9%; /* Dark #0A0A0A */
-    --accent-foreground: 250 100% 98.4%;
+    --destructive:       0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
 
-    --destructive: 0 0% 3.9%;
-    --destructive-foreground: 250 100% 98.4%;
-
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 3.9%;
+    --border:            0 0% 88%;      /* rule #E0E0E0 */
+    --input:             0 0% 88%;
+    --ring:              188 17% 44%;   /* mist-teal */
 
     --radius: 0.5rem;
+
+    /* Raw hex palette — for inline styles and direct CSS use */
+    --deep-teal:   #0A2E36;
+    --slate-teal:  #1F4B53;
+    --mist-teal:   #5C7E83;
+    --brass:       #5A4357;
+    --brass-deep:  #3F2F3D;
+    --bone:        #FAFAFA;
+    --cream:       #F4F4F4;
+    --bone-200:    #EAEAEA;
+    --ink-1:       #0F1B1F;
+    --ink-2:       #3D5A60;
+    --ink-3:       #6B7B7E;
+    --ink-4:       #8A9396;
+    --rule:        #E0E0E0;
+    --rule-dim:    #1E4148;
+
+    --brand-gradient: linear-gradient(
+      135deg,
+      #5A4357 0%,
+      #3F2F3D 30%,
+      #1F4B53 70%,
+      #0A2E36 100%
+    );
+    --brand-gradient-soft: linear-gradient(
+      135deg,
+      rgb(90 67 87 / 0.18) 0%,
+      rgb(31 75 83 / 0.12) 60%,
+      rgb(10 46 54 / 0.18) 100%
+    );
+
+    /* Shadows — cool-tinted */
+    --shadow-sm: 0 1px 2px rgb(15 27 31 / 0.06);
+    --shadow-md: 0 4px 8px -2px rgb(15 27 31 / 0.10);
+    --shadow-lg: 0 12px 24px -6px rgb(15 27 31 / 0.14), 0 4px 8px -4px rgb(15 27 31 / 0.08);
+    --shadow-xl: 0 24px 40px -8px rgb(15 27 31 / 0.18), 0 8px 16px -8px rgb(15 27 31 / 0.10);
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 250 100% 98.4%;
+    --background:        191 69% 13%;
+    --foreground:        0 0% 98%;
 
-    --card: 0 0% 3.9%;
-    --card-foreground: 250 100% 98.4%;
+    --card:              191 65% 16%;
+    --card-foreground:   0 0% 98%;
 
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 250 100% 98.4%;
+    --popover:           191 65% 16%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 250 100% 98.4%;
-    --primary-foreground: 0 0% 3.9%;
+    --primary:           0 0% 98%;
+    --primary-foreground: 191 69% 13%;
 
-    --secondary: 250 100% 98.4%;
-    --secondary-foreground: 0 0% 3.9%;
+    --secondary:         189 46% 22%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted:             191 60% 18%;
+    --muted-foreground:  189 8% 60%;
 
-    --accent: 250 100% 98.4%;
-    --accent-foreground: 0 0% 3.9%;
+    --accent:            188 22% 56%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 250 100% 98.4%;
-    --destructive-foreground: 0 0% 3.9%;
-
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 250 100% 98.4%;
+    --border:            190 40% 25%;
+    --input:             190 40% 25%;
+    --ring:              308 15% 31%;
   }
 }
 
@@ -80,11 +109,42 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    font-feature-settings: "cv11" 1;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "ss01" 1, "cv11" 1;
+    line-height: 1.55;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight;
+    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    @apply font-semibold;
+    letter-spacing: -0.035em;
+    line-height: 1.10;
   }
+}
+
+/* Eyebrow label */
+.eyebrow {
+  font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--brass);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+/* Subtle hairline grid (replaces BackgroundParticles) */
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(15, 27, 31, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 27, 31, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
 }

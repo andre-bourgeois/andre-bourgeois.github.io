@@ -8,11 +8,7 @@ import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
@@ -21,34 +17,16 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      console.log('Submitting contact form:', formData);
+      const { data, error } = await supabase.functions.invoke('send-contact-email', { body: formData });
+      if (error) throw error;
 
-      const { data, error } = await supabase.functions.invoke('send-contact-email', {
-        body: formData
-      });
-
-      if (error) {
-        console.error('Supabase function error:', error);
-        throw error;
-      }
-
-      console.log('Contact form submission successful:', data);
-
-      // Show success message
       toast({
-        title: "Message sent successfully!",
+        title: "Message sent.",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
 
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
-      });
-
+      setFormData({ name: '', email: '', message: '' });
     } catch (error: any) {
-      console.error('Error submitting contact form:', error);
       toast({
         title: "Error sending message",
         description: "There was a problem sending your message. Please try again or email me directly.",
@@ -60,59 +38,60 @@ const Contact = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
     <section id="contact" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ color: '#0A0A0A' }}>
-            Let's Talk
+          <span className="eyebrow" style={{ display: 'block', textAlign: 'center' }}>06 · Contact</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Let's talk
           </h2>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-8 bg-background rounded-lg p-8 shadow-lg border">
-            <div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <Label htmlFor="name" className="text-base font-medium">Name</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    type="text"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    disabled={isSubmitting}
-                    className="mt-2"
-                    placeholder="Your Name"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="email" className="text-base font-medium">Email Address</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    disabled={isSubmitting}
-                    className="mt-2"
-                    placeholder="your.email@website.com"
-                  />
-                </div>
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-6 rounded-lg p-8 border"
+            style={{ background: 'var(--cream)', borderColor: 'var(--rule)' }}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <Label htmlFor="name" className="text-sm font-medium" style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '-0.02em', color: 'var(--ink-1)' }}>Name</Label>
+                <Input
+                  id="name"
+                  name="name"
+                  type="text"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  disabled={isSubmitting}
+                  className="mt-2 focus-visible:ring-[var(--mist-teal)] focus-visible:border-[var(--mist-teal)]"
+                  style={{ background: 'var(--bone)', borderColor: 'var(--rule)', color: 'var(--ink-1)' }}
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <Label htmlFor="email" className="text-sm font-medium" style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '-0.02em', color: 'var(--ink-1)' }}>Email address</Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  disabled={isSubmitting}
+                  className="mt-2 focus-visible:ring-[var(--mist-teal)] focus-visible:border-[var(--mist-teal)]"
+                  style={{ background: 'var(--bone)', borderColor: 'var(--rule)', color: 'var(--ink-1)' }}
+                  placeholder="your.email@website.com"
+                />
               </div>
             </div>
 
             <div>
-              <Label htmlFor="message" className="text-base font-medium">Message</Label>
+              <Label htmlFor="message" className="text-sm font-medium" style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '-0.02em', color: 'var(--ink-1)' }}>Message</Label>
               <Textarea
                 id="message"
                 name="message"
@@ -120,26 +99,44 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 disabled={isSubmitting}
-                className="mt-2 min-h-[150px]"
+                className="mt-2 min-h-[150px] focus-visible:ring-[var(--mist-teal)] focus-visible:border-[var(--mist-teal)]"
+                style={{ background: 'var(--bone)', borderColor: 'var(--rule)', color: 'var(--ink-1)' }}
                 placeholder="I'd love to talk about..."
               />
             </div>
 
-            <Button 
-              type="submit" 
+            <button
+              type="submit"
               disabled={isSubmitting}
-              className="w-full bg-primary hover:bg-primary text-primary-foreground py-3 text-lg font-medium"
+              className="w-full py-3 rounded-lg text-base font-medium transition-colors duration-200 disabled:opacity-60"
+              style={{ background: 'var(--deep-teal)', color: 'var(--bone)' }}
+              onMouseEnter={e => !isSubmitting && (e.currentTarget.style.background = 'var(--slate-teal)')}
+              onMouseLeave={e => (e.currentTarget.style.background = 'var(--deep-teal)')}
             >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
-            </Button>
+              {isSubmitting ? 'Sending...' : 'Send message'}
+            </button>
           </form>
 
           <div className="text-center mt-8">
-            <p className="mb-2" style={{ color: '#0A0A0A' }}>Prefer a direct contact?</p>
-            <a 
+            <p className="mb-2 text-sm" style={{ color: 'var(--ink-2)' }}>Prefer a direct contact?</p>
+            <a
               href="mailto:hello@andrebourgeois.me"
-              className="hover:opacity-80 transition-colors font-medium text-lg"
-              style={{ color: '#0A0A0A' }}
+              className="font-medium text-lg transition-colors duration-150"
+              style={{
+                color: 'var(--brass)',
+                fontFamily: "'JetBrains Mono', monospace",
+                letterSpacing: '0.04em',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.color = 'var(--brass-deep)';
+                e.currentTarget.style.textDecoration = 'underline';
+                (e.currentTarget as HTMLAnchorElement).style.textUnderlineOffset = '4px';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.color = 'var(--brass)';
+                e.currentTarget.style.textDecoration = 'none';
+              }}
             >
               hello@andrebourgeois.me
             </a>
