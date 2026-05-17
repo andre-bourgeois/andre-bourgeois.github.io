@@ -30,7 +30,7 @@ const Navigation = () => {
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <img
-              src="/logo-gradient.png"
+              src="/logo.png"
               alt="André Bourgeois logo"
               className="h-9 w-auto"
             />

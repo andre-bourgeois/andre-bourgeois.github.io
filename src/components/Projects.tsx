@@ -58,12 +58,12 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="eyebrow" style={{ display: 'block', textAlign: 'center' }}>04 · Personal projects</span>
+        <div className="mb-16">
+          <span className="eyebrow">04 · Personal projects</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Personal projects
           </h2>
-          <p className="text-xl max-w-2xl mx-auto" style={{ color: 'var(--ink-3)' }}>
+          <p className="text-xl max-w-2xl" style={{ color: 'var(--ink-3)' }}>
             Experimental and open-source work exploring new possibilities with emerging technology.
           </p>
         </div>
@@ -158,7 +158,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="mt-12">
           <p className="mb-6" style={{ color: 'var(--ink-3)' }}>
             Interested in collaborating on your next project?
           </p>

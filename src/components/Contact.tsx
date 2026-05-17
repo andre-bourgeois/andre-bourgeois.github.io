@@ -44,14 +44,14 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <span className="eyebrow" style={{ display: 'block', textAlign: 'center' }}>06 · Contact</span>
+        <div className="mb-12">
+          <span className="eyebrow">06 · Contact</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Let's talk
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl">
           <form
             onSubmit={handleSubmit}
             className="space-y-6 rounded-lg p-8 border"
@@ -117,7 +117,7 @@ const Contact = () => {
             </button>
           </form>
 
-          <div className="text-center mt-8">
+          <div className="mt-8">
             <p className="mb-2 text-sm" style={{ color: 'var(--ink-2)' }}>Prefer a direct contact?</p>
             <a
               href="mailto:hello@andrebourgeois.me"
