@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518 518">
-  <defs>
-    <mask id="m" maskContentUnits="userSpaceOnUse">
-      <image width="518" height="518"></image>
-    </mask>
-  </defs>
-  
-  <rect class="mark" width="518" height="518" mask="url(#m)"></rect>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .m { fill: #0A2E36; }
+    @media (prefers-color-scheme: dark) { .m { fill: #FAFAFA; } }
+  </style>
+  <circle class="m" cx="30" cy="68" r="28"/>
+  <circle class="m" cx="62" cy="68" r="22"/>
+  <circle class="m" cx="70" cy="28" r="18"/>
 </svg>
