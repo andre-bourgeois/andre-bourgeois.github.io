@@ -44,7 +44,7 @@ const Professional = () => {
             />
             <div
               className="absolute inset-0"
-              style={{ background: 'var(--brand-gradient-soft)', pointerEvents: 'none' }}
+              style={{ background: 'linear-gradient(135deg, rgb(90 67 87 / 0.04) 0%, rgb(31 75 83 / 0.03) 60%, rgb(10 46 54 / 0.04) 100%)', pointerEvents: 'none' }}
             />
           </div>
         </div>
