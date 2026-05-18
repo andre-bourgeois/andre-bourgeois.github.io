@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518 518">
+  <defs>
+    <mask id="m" maskContentUnits="userSpaceOnUse">
+      <image width="518" height="518"></image>
+    </mask>
+  </defs>
+  <rect width="518" height="518" fill="#0A2E36" mask="url(#m)"></rect>
+</svg>
