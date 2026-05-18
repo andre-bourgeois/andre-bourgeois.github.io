@@ -17,7 +17,7 @@ const About = () => {
           <div className="animate-fade-in">
             <span className="eyebrow">02 · About</span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Connecting innovation to impact
+              Innovation in practice
             </h2>
 
             <div className="space-y-6 text-lg leading-relaxed" style={{ color: 'var(--ink-1)' }}>
@@ -29,16 +29,16 @@ const About = () => {
               </p>
 
               <p>
-                Today, the digital world is accelerating faster than the physical world can respond. My work lives at the intersection
-                of these worlds. I help organisations bridge the gap, transforming emerging technology into grounded, real-world outcomes.
+                Today, the digital world is accelerating faster than the physical world can respond. My work lives in this gap.
+                I help organisations make sense of emerging technology and translate it into grounded, real-world outcomes.
               </p>
 
               <p>
                 When done right,{' '}
                 <strong style={{ color: 'var(--mist-teal)', fontWeight: 600 }}>this technology disappears into the experience</strong>,
-                delivering value without drawing attention to itself. Whether I'm shaping solutions with company leadership, building
-                alongside engineering teams, or exploring ideas through my own research, my focus is always the same: building
-                technology that quietly elevates the experience.
+                delivering value without drawing attention to itself. The context might change - whether I'm advising leadership teams,
+                coordinating engineering efforts, or conducting independent research - but the focus never does: building technology
+                that quietly elevates the experience.
               </p>
             </div>
 

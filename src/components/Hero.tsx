@@ -21,8 +21,8 @@ const Hero = () => {
               <TypingAnimation />
             </p>
             <p className="text-xl leading-relaxed max-w-2xl" style={{ color: 'var(--ink-1)' }}>
-              I design technology that blends seamlessly into the world around us.
-              Intentional, impactful, and invisible.
+              I help organisation bridge the gap between emerging technology and the real world,
+              building solutions that are intentional, impactful, and invisible.
             </p>
           </div>
 

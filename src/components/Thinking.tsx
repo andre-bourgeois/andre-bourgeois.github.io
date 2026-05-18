@@ -9,8 +9,8 @@ const Thinking = () => {
             Thinking and writing
           </h2>
           <p className="text-xl max-w-2xl" style={{ color: 'var(--ink-3)' }}>
-            Exploring the intersection of technology, space, and human experience.
-            Thoughts on building technology that serves people.
+            Notes on emerging technology - AI, spatial computing, IoT, robotics, - and
+            the work of making technology disappear into every day life.
           </p>
         </div>
         <div>

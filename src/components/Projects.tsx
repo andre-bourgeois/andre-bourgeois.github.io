@@ -26,7 +26,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Park My Bike",
-    description: "An edge-AI model designed to detect bicycles at bicycle bays, with the goal of helping riders determine the location and amount of available parking around London.",
+    description: "An edge-AI model that detects bicycles at cycle bays, helping riders find available parking across London without relying on centralised infrastructure.",
     Icon: Bike,
     tags: [
       { name: "Edge Computing",   color: "teal" },
@@ -38,7 +38,7 @@ const projects: Project[] = [
   },
   {
     title: "IR Occupancy",
-    description: "Testing the feasability of using infrared beam-break sensors for occupancy monitoring, in contrast to the expensive, AI-driven devices that are commonly used today.",
+    description: "Testing the feasibility of infrared beam-break sensors for occupancy monitoring — a low-cost alternative to the expensive, AI-driven devices that have become the default.",
     Icon: Zap,
     tags: [
       { name: "Custom PCB",           color: "plum" },
@@ -160,7 +160,7 @@ const Projects = () => {
 
         <div className="mt-12">
           <p className="mb-6" style={{ color: 'var(--ink-3)' }}>
-            Interested in collaborating on your next project?
+            Have a problem that needs a fresh approach?
           </p>
           <button
             onClick={scrollToContact}
