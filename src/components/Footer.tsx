@@ -4,7 +4,7 @@ import { Github, Linkedin } from 'lucide-react';
 const Footer = () => {
   const socials = [
     {
-      href: "https://www.linkedin.com/in/andrelbourgeois",
+      href: "https://www.linkedin.com/in/andre-bourgeois",
       label: "LinkedIn",
       icon: <Linkedin size={24} />,
     },
