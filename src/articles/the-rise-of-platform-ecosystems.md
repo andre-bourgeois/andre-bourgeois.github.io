@@ -2,14 +2,14 @@
 title: The Rise of Platform Ecosystems
 date: 2026-02-02
 tags: [Smart Buildings, Technology Strategy, Platforms, Ecosystems]
-excerpt: Are modern buildings platforms or ecosystems? As technology advances and smart building deployments become more complex, the lines between these concepts continue to blur — and the answer may matter more than you think.
+excerpt: Are modern buildings platforms or ecosystems? As technology advances and smart building deployments become more complex, the lines between these concepts continue to blur - and the answer may matter more than you think.
 ---
 
 *Understanding the Hybrid Nature of Modern Buildings*
 
 Are modern buildings platforms or ecosystems? This question has been on my mind frequently in the past several months as I've worked with clients and technology partners to bring isolated technologies together into comprehensive smart building deployments. As technology advances and smart building deployments become more complex, the lines between these concepts continue to blur.
 
-The answer to this question may be more important than you think. How we conceptualise buildings — as platforms, ecosystems, or something else entirely — directly influences vendor strategies, interoperability requirements, and ultimately, the success of smart buildings in the real world.
+The answer to this question may be more important than you think. How we conceptualise buildings - as platforms, ecosystems, or something else entirely - directly influences vendor strategies, interoperability requirements, and ultimately, the success of smart buildings in the real world.
 
 To answer this question properly, we first need to establish clear definitions for both of these terms.
 
@@ -42,7 +42,7 @@ From this perspective, we can view modern buildings as platforms given that they
 
 While the platform perspective helps us understand the technical foundation of modern buildings, it doesn't capture the full picture. To do that, we need to explore the concept of ecosystems.
 
-An ecosystem is a network of interconnected entities — companies, products, users — that co-exist and interact. In our context, an ecosystem can be viewed as the broader network of interconnected participants that emerge around a platform for the purposes of creating and sharing value.
+An ecosystem is a network of interconnected entities - companies, products, users - that co-exist and interact. In our context, an ecosystem can be viewed as the broader network of interconnected participants that emerge around a platform for the purposes of creating and sharing value.
 
 Key characteristics of ecosystems include:
 
@@ -65,10 +65,10 @@ From this perspective, we can view modern buildings as the diverse ecosystems wh
 
 ## Platforms Are Designed. Ecosystems Emerge.
 
-Having established both definitions, a clear pattern emerges: platforms are designed, ecosystems emerge. Platforms define themselves — their own rules, interfaces, and boundaries — and ecosystems are defined by their participants through countless interactions and adaptations.
+Having established both definitions, a clear pattern emerges: platforms are designed, ecosystems emerge. Platforms define themselves - their own rules, interfaces, and boundaries - and ecosystems are defined by their participants through countless interactions and adaptations.
 
-Thankfully, they're not mutually exclusive. Modern buildings embody both. In isolation, a building is a platform — a controlled technical foundation with standardised systems and defined interfaces. But buildings don't exist in isolation. They're embedded in networks of owners, operators, vendors, and occupants whose relationships reveal their broader context. They create emergent value that no single participant could design or control. This is the ecosystem.
+Thankfully, they're not mutually exclusive. Modern buildings embody both. In isolation, a building is a platform - a controlled technical foundation with standardised systems and defined interfaces. But buildings don't exist in isolation. They're embedded in networks of owners, operators, vendors, and occupants whose relationships reveal their broader context. They create emergent value that no single participant could design or control. This is the ecosystem.
 
-The question isn't whether buildings are platforms or ecosystems. Buildings are platforms that host ecosystems — or more precisely, platform ecosystems where technical infrastructure enables organic human and organisational relationships to flourish.
+The question isn't whether buildings are platforms or ecosystems. Buildings are platforms that host ecosystems - or more precisely, platform ecosystems where technical infrastructure enables organic human and organisational relationships to flourish.
 
-Understanding this duality matters because it shapes how we approach interoperability, retrofit strategy, and long-term value creation in smart buildings — each of which are explored in depth in some of my other articles.
+Understanding this duality matters because it shapes how we approach interoperability, retrofit strategy, and long-term value creation in smart buildings - each of which are explored in depth in some of my other articles.

@@ -38,7 +38,7 @@ const projects: Project[] = [
   },
   {
     title: "IR Occupancy",
-    description: "Testing the feasibility of infrared beam-break sensors for occupancy monitoring — a low-cost alternative to the expensive, AI-driven devices that have become the default.",
+    description: "Testing the feasibility of infrared beam-break sensors for occupancy monitoring - a low-cost alternative to the expensive, AI-driven devices that have become the default.",
     Icon: Zap,
     tags: [
       { name: "Custom PCB",           color: "plum" },

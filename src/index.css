@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* André Bourgeois — v2.2 Design System (off-white canvas + dusty plum pop) */
+/* André Bourgeois - v2.2 Design System (off-white canvas + dusty plum pop) */
 
 @layer base {
   :root {
@@ -38,7 +38,7 @@
 
     --radius: 0.5rem;
 
-    /* Raw hex palette — for inline styles and direct CSS use */
+    /* Raw hex palette - for inline styles and direct CSS use */
     --deep-teal:   #0A2E36;
     --slate-teal:  #1F4B53;
     --mist-teal:   #5C7E83;
@@ -68,7 +68,7 @@
       rgb(10 46 54 / 0.18) 100%
     );
 
-    /* Shadows — cool-tinted */
+    /* Shadows - cool-tinted */
     --shadow-sm: 0 1px 2px rgb(15 27 31 / 0.06);
     --shadow-md: 0 4px 8px -2px rgb(15 27 31 / 0.10);
     --shadow-lg: 0 12px 24px -6px rgb(15 27 31 / 0.14), 0 4px 8px -4px rgb(15 27 31 / 0.08);

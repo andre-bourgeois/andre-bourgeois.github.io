@@ -15,7 +15,7 @@ const Thinking = () => {
             Thinking &amp; Writing
           </h2>
           <p className="text-xl max-w-2xl" style={{ color: 'var(--ink-3)' }}>
-            Notes on emerging technology — AI, spatial computing, IoT, robotics — and
+            Notes on emerging technology - AI, spatial computing, IoT, robotics - and
             the work of making technology disappear into everyday life.
           </p>
         </div>
