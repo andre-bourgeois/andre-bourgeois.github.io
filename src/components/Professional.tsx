@@ -4,9 +4,9 @@ const Professional = () => {
     <section id="professional" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-16">
-          <span className="eyebrow">03 · Professional work</span>
+          <span className="eyebrow">03 · Professional Work</span>
           <h2 className="text-3xl md:text-4xl font-bold">
-            A decade at the frontier
+            A Decade at the Frontier
           </h2>
         </div>
 

@@ -1,12 +1,12 @@
 
 const About = () => {
   const tiles = [
-    { icon: '/icons/building-icon.svg', title: 'Smart buildings',         desc: 'Intelligent systems that adapt to human needs and environmental conditions.' },
-    { icon: '/icons/cpu-icon.svg',      title: 'Internet of things',      desc: 'Connected ecosystems that turn data into actionable insights.' },
+    { icon: '/icons/building-icon.svg', title: 'Smart Buildings',         desc: 'Intelligent systems that adapt to human needs and environmental conditions.' },
+    { icon: '/icons/cpu-icon.svg',      title: 'Internet of Things',      desc: 'Connected ecosystems that turn data into actionable insights.' },
     { icon: '/icons/bot-icon.svg',      title: 'Robotics',                desc: 'Autonomous coordination and control in multi-agent systems.' },
-    { icon: '/icons/brain-icon.svg',    title: 'Artificial intelligence', desc: 'The applications and impacts of generative and edge AI.' },
-    { icon: '/icons/users-icon.svg',    title: 'Technology leadership',   desc: 'Guiding teams and organisations through complex technology decisions.' },
-    { icon: '/icons/bulb-icon.svg',     title: 'Innovation strategy',     desc: 'Making sense of emerging technology and its real-world opportunities.' },
+    { icon: '/icons/brain-icon.svg',    title: 'Artificial Intelligence', desc: 'The applications and impacts of generative and edge AI.' },
+    { icon: '/icons/users-icon.svg',    title: 'Technology Leadership',   desc: 'Guiding teams and organisations through complex technology decisions.' },
+    { icon: '/icons/bulb-icon.svg',     title: 'Innovation Strategy',     desc: 'Making sense of emerging technology and its real-world opportunities.' },
   ];
 
   return (
@@ -17,7 +17,7 @@ const About = () => {
           <div className="animate-fade-in">
             <span className="eyebrow">02 · About</span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Innovation in practice
+              Innovation in Practice
             </h2>
 
             <div className="space-y-6 text-lg leading-relaxed" style={{ color: 'var(--ink-1)' }}>
@@ -43,7 +43,7 @@ const About = () => {
             </div>
 
             <div className="mt-8">
-              <h3 className="text-xl font-semibold mb-4">Core philosophy</h3>
+              <h3 className="text-xl font-semibold mb-4">Core Philosophy</h3>
               <blockquote
                 className="pl-6 text-lg leading-relaxed"
                 style={{

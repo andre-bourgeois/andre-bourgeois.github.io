@@ -59,9 +59,9 @@ const Projects = () => {
     <section id="projects" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-16">
-          <span className="eyebrow">04 · Personal projects</span>
+          <span className="eyebrow">04 · Personal Projects</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Personal projects
+            Personal Projects
           </h2>
           <p className="text-xl max-w-2xl" style={{ color: 'var(--ink-3)' }}>
             Experimental and open-source work exploring new possibilities with emerging technology.

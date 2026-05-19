@@ -47,7 +47,7 @@ const Contact = () => {
         <div className="mb-12">
           <span className="eyebrow">06 · Contact</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's talk
+            Let's Talk
           </h2>
         </div>
 

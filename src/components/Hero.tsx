@@ -13,7 +13,7 @@ const Hero = () => {
           <span className="eyebrow">01 · André Bourgeois</span>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
-            Good technology leaves <em style={{ fontStyle: 'normal', color: 'var(--mist-teal)' }}>no</em> fingerprints.
+            Good Technology Leaves <em style={{ fontStyle: 'normal', color: 'var(--mist-teal)' }}>No</em> Fingerprints.
           </h1>
 
           <div className="mb-8">
