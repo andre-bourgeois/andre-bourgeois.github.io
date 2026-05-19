@@ -46,7 +46,7 @@ const Footer = () => {
               André Bourgeois
             </h3>
             <p className="text-sm" style={{ color: 'var(--ink-3)' }}>
-              Frontier Technology &amp; Real-world Impact
+              Frontier Technology · Real-world Impact
             </p>
           </div>
 
