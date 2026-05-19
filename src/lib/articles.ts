@@ -12,8 +12,9 @@ export interface Article extends ArticleMeta {
 }
 
 function parseFrontmatter(raw: string): { meta: Record<string, string | string[]>; content: string } {
-  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
-  if (!match) return { meta: {}, content: raw };
+  const stripped = raw.charCodeAt(0) === 0xFEFF ? raw.slice(1) : raw;
+  const match = stripped.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  if (!match) return { meta: {}, content: stripped };
 
   const content = match[2].trim();
   const meta: Record<string, string | string[]> = {};
