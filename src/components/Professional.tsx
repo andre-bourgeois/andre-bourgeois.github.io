@@ -31,7 +31,7 @@ const Professional = () => {
               into integrated, intelligent, and responsive environments. I translate high-level business
               objectives into actionable strategies and technology designs that are grounded in what clients
               actually need, not just what's making it's rounds on the latest Hype Cycle. The goal is always
-              teh same: demystify the path to digital transformation and ensure organisations make informed,
+              the same: demystify the path to digital transformation and ensure organisations make informed,
               intentional technology investments.
             </p>
           </div>
