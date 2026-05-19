@@ -1,4 +1,4 @@
-﻿---
+---
 title: Why Good Technology Disappears
 subtitle: On Restraint, Invisibility, and the Discipline of Building Technology That Serves
 date: 2026-01-01
