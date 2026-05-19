@@ -66,7 +66,7 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
       </div>
 
       <Link
-        to={`/thinking/${article.slug}`}
+        to={`/articles/${article.slug}`}
         className="inline-flex items-center gap-2 text-sm font-medium transition-colors duration-150"
         style={{ color: 'var(--deep-teal)' }}
         onMouseEnter={e => (e.currentTarget.style.color = 'var(--mist-teal)')}

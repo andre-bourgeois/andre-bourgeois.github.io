@@ -10,7 +10,7 @@ const ArticlePage = () => {
   const { slug } = useParams<{ slug: string }>();
   const article = slug ? getArticle(slug) : undefined;
 
-  if (!article) return <Navigate to="/thinking" replace />;
+  if (!article) return <Navigate to="/articles" replace />;
 
   return (
     <div className="min-h-screen bg-background relative">
@@ -23,7 +23,7 @@ const ArticlePage = () => {
 
             {/* Back link */}
             <Link
-              to="/thinking"
+              to="/articles"
               className="inline-flex items-center gap-2 text-sm font-medium mb-12 transition-colors duration-150"
               style={{ color: 'var(--ink-3)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.02em' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'var(--deep-teal)')}

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import ArticleCard from '@/components/ArticleCard';
 import { getAllArticles, getAllTags } from '@/lib/articles';
 
-const ThinkingPage = () => {
+const ArticlesPage = () => {
   const articles = getAllArticles();
   const tags = getAllTags();
   const [activeTag, setActiveTag] = useState<string | null>(null);
@@ -25,13 +25,13 @@ const ThinkingPage = () => {
 
             {/* Header */}
             <div className="mb-16">
-              <span className="eyebrow">05 · Thinking</span>
+              <span className="eyebrow">Articles</span>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Thinking &amp; Writing
+                Everything I've Written
               </h1>
               <p className="text-xl max-w-2xl" style={{ color: 'var(--ink-3)' }}>
-                Notes on emerging technology — AI, spatial computing, IoT, robotics — and
-                the work of making technology disappear into everyday life.
+                A complete archive of my writing on frontier technology, smart buildings,
+                and the challenge of making complex systems work quietly in the real world.
               </p>
             </div>
 
@@ -90,4 +90,4 @@ const ThinkingPage = () => {
   );
 };
 
-export default ThinkingPage;
+export default ArticlesPage;

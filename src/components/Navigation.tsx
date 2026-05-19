@@ -1,15 +1,26 @@
-
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
+  const handleLogoClick = () => {
+    if (isHome) {
+      document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = '/';
+    }
+  };
+
+  const handleNavLink = (sectionId: string) => {
+    setIsOpen(false);
+    if (isHome) {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.href = `/#${sectionId}`;
     }
   };
 
@@ -26,7 +37,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <button
-            onClick={() => scrollToSection('hero')}
+            onClick={handleLogoClick}
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <img
@@ -47,7 +58,7 @@ const Navigation = () => {
             {navLinks.map(link => (
               <button
                 key={link.id}
-                onClick={() => scrollToSection(link.id)}
+                onClick={() => handleNavLink(link.id)}
                 className="text-sm transition-colors duration-150"
                 style={{ color: 'var(--ink-2)' }}
                 onMouseEnter={e => (e.currentTarget.style.color = 'var(--brass)')}
@@ -57,7 +68,7 @@ const Navigation = () => {
               </button>
             ))}
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => handleNavLink('contact')}
               className="text-sm font-medium px-4 py-2 rounded-md transition-colors duration-150"
               style={{ background: 'var(--deep-teal)', color: 'var(--bone)' }}
               onMouseEnter={e => (e.currentTarget.style.background = 'var(--slate-teal)')}
@@ -84,7 +95,7 @@ const Navigation = () => {
               {navLinks.map(link => (
                 <button
                   key={link.id}
-                  onClick={() => scrollToSection(link.id)}
+                  onClick={() => handleNavLink(link.id)}
                   className="text-left text-sm transition-colors duration-150"
                   style={{ color: 'var(--ink-2)' }}
                 >
@@ -92,7 +103,7 @@ const Navigation = () => {
                 </button>
               ))}
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => handleNavLink('contact')}
                 className="text-sm font-medium px-4 py-2 rounded-md w-fit transition-colors duration-150"
                 style={{ background: 'var(--deep-teal)', color: 'var(--bone)' }}
               >

@@ -29,7 +29,7 @@ const Thinking = () => {
             </div>
 
             <Link
-              to="/thinking"
+              to="/articles"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border font-medium transition-colors duration-200"
               style={{ background: 'transparent', color: 'var(--deep-teal)', borderColor: 'var(--deep-teal)' }}
               onMouseEnter={e => {
