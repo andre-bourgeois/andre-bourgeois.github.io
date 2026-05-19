@@ -24,6 +24,22 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-dark-16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/favicons/favicon-dark-180.png" />
 
+    <!-- SPA routing for GitHub Pages: restores path encoded by 404.html -->
+    <script>
+      (function(l) {
+        if (l.search[1] === 'p') {
+          var params = l.search.slice(1).split('&').reduce(function(p, s) {
+            var r = s.split('='); p[r[0]] = r.slice(1).join('=').replace(/~and~/g, '&'); return p;
+          }, {});
+          if (params.p !== undefined) {
+            window.history.replaceState(null, null,
+              '/' + params.p + (params.q ? '?' + params.q : '') + l.hash
+            );
+          }
+        }
+      }(window.location));
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
