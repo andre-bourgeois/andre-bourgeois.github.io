@@ -135,6 +135,11 @@
   margin-bottom: 0.75rem;
 }
 
+/* Suppress horizontal rules in article prose */
+.prose hr {
+  display: none;
+}
+
 /* Subtle hairline grid (replaces BackgroundParticles) */
 .grid-bg {
   position: fixed;
