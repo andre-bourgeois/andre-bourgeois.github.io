@@ -20,8 +20,8 @@ const Hero = () => {
             <p className="text-xl text-muted-foreground mb-4 leading-relaxed min-h-[2.5rem]">
               <TypingAnimation />
             </p>
-            <p className="text-xl leading-relaxed max-w-2xl" style={{ color: 'var(--ink-1)' }}>
-              I help organisation bridge the gap between emerging technology and the real world,
+            <p className="text-xl leading-relaxed max-w-3xl" style={{ color: 'var(--ink-1)' }}>
+              I help organisation bridge the gap between emerging technology and the real world by
               building solutions that are intentional, impactful, and invisible.
             </p>
           </div>
