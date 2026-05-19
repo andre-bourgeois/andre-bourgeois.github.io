@@ -38,7 +38,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Brand */}
-          <div>
+          <div className="text-left">
             <h3
               className="text-lg font-semibold mb-1"
               style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '-0.02em', color: 'var(--ink-1)' }}
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div>
+          <div className="text-left md:text-center">
             <p
               className="text-sm"
               style={{ fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.04em', color: 'var(--ink-3)' }}
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           {/* Social icons */}
-          <div className="flex justify-start md:justify-end items-center gap-4">
+          <div className="flex justify-start md:justify-end items-center gap-4 md:ml-auto">
             {socials.map(s => (
               <a
                 key={s.label}
