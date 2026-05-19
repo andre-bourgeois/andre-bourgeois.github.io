@@ -42,11 +42,17 @@ const ArticlePage = () => {
               </p>
 
               <h1
-                className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
+                className="text-4xl md:text-5xl font-bold mb-3 leading-tight"
                 style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '-0.035em', color: 'var(--ink-1)' }}
               >
                 {article.title}
               </h1>
+
+              {article.subtitle && (
+                <p className="text-xl font-medium mb-4 leading-snug" style={{ color: 'var(--mist-teal)' }}>
+                  {article.subtitle}
+                </p>
+              )}
 
               <p className="text-xl leading-relaxed mb-6" style={{ color: 'var(--ink-2)' }}>
                 {article.excerpt}

@@ -1,6 +1,7 @@
 export interface ArticleMeta {
   slug: string;
   title: string;
+  subtitle: string;
   date: string;
   tags: string[];
   excerpt: string;
@@ -46,6 +47,7 @@ function buildArticles(): Article[] {
       return {
         slug,
         title: (meta.title as string) || slug,
+        subtitle: (meta.subtitle as string) || '',
         date: (meta.date as string) || '',
         tags: (meta.tags as string[]) || [],
         excerpt: (meta.excerpt as string) || '',

@@ -38,11 +38,17 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
         </p>
 
         <h3
-          className="text-xl font-semibold mb-2 leading-snug"
+          className="text-xl font-semibold mb-1 leading-snug"
           style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: '-0.025em', color: 'var(--ink-1)' }}
         >
           {article.title}
         </h3>
+
+        {article.subtitle && (
+          <p className="text-sm font-medium mb-2 leading-snug" style={{ color: 'var(--mist-teal)' }}>
+            {article.subtitle}
+          </p>
+        )}
 
         <p className="text-sm leading-relaxed mb-4" style={{ color: 'var(--ink-2)' }}>
           {article.excerpt}
