@@ -13,8 +13,6 @@ The answer to this question may be more important than you think. How we concept
 
 To answer this question properly, we first need to establish clear definitions for both of these terms.
 
----
-
 ## What Is a Platform?
 
 A platform is defined as the foundational technology or infrastructure facilitating interactions and enabling other products, services, or applications to be built on top of it.
@@ -33,10 +31,6 @@ Familiar examples of platforms include:
 - Salesforce/SAP (enterprise software)
 
 From this perspective, we can view modern buildings as platforms given that they provide the core technology and infrastructure for many entities within a smart building. Their cabled and wireless infrastructure provides the foundation for communication across systems. The core building systems offer standardised interfaces that third-party applications can build upon. And the physical space itself becomes programmable, enabling interactions that adapt to occupant needs in real-time.
-
-*Figure 1: The Smart Building Platform*
-
----
 
 ## What Is an Ecosystem?
 
@@ -58,10 +52,6 @@ Familiar examples of ecosystems include:
 - The Apple ecosystem (hardware, software, services, developers, users)
 
 From this perspective, we can view modern buildings as the diverse ecosystems where owners, operators, occupants, and vendors create mutual value. Operators depend on technology providers for system performance. Software vendors rely on hardware for data and connectivity. Building owners need occupants to realise returns on investment. These interdependencies form organically and evolve continuously, creating environments that serve everyone within them.
-
-*Figure 2: The Smart Building Ecosystem*
-
----
 
 ## Platforms Are Designed. Ecosystems Emerge.
 

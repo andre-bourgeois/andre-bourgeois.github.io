@@ -1,6 +1,6 @@
 ---
 title: Why Good Technology Disappears
-date: 2026-05-01
+date: 2026-01-01
 tags: [Technology, Design, Smart Buildings]
 excerpt: The best technology is invisible. It shapes how we experience a space or a process without ever drawing attention to itself. Here is why that matters, and what it takes to build it.
 ---
@@ -44,7 +44,5 @@ The pattern I see in organisations that consistently build invisible technology 
 They talk about users before they talk about platforms. They measure success by what people do not notice, not by what they do. They are willing to rebuild something quietly if it starts to surface friction, without needing to announce the fix.
 
 That posture - humble, outcome-focused, resistant to spectacle - is rarer than it should be. But it is what separates technology that endures from technology that dates.
-
----
 
 *If you are thinking about how to make technology work more quietly in your organisation, I would be glad to think through it with you.*
