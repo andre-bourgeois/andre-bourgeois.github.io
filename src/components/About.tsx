@@ -1,7 +1,7 @@
 
 const About = () => {
   const tiles = [
-    { icon: '/icons/building-icon.svg', title: 'Smart Buildings',         desc: 'Intelligent systems that adapt to human needs and environmental conditions.' },
+    { icon: '/icons/building-icon.svg', title: 'Digital Buildings',         desc: 'Intelligent systems that adapt to human needs and environmental conditions.' },
     { icon: '/icons/cpu-icon.svg',      title: 'Internet of Things',      desc: 'Connected ecosystems that turn data into actionable insights.' },
     { icon: '/icons/bot-icon.svg',      title: 'Robotics',                desc: 'Autonomous coordination and control in multi-agent systems.' },
     { icon: '/icons/brain-icon.svg',    title: 'Artificial Intelligence', desc: 'The applications and impacts of generative and edge AI.' },

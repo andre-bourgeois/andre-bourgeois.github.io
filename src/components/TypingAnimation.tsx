@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 const TypingAnimation = () => {
   const phrases = [
-    "Smart Buildings",
+    "Digital Buildings",
     "Internet of Things",
     "Robotics",
     "Artificial Intelligence",
