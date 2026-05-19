@@ -1,6 +1,6 @@
----
+﻿---
 title: Why Good Technology Disappears
-subtitle: 
+subtitle: On Restraint, Invisibility, and the Discipline of Building Technology That Serves
 date: 2026-01-01
 tags: [Technology, Design, Smart Buildings]
 excerpt: The best technology is invisible. It shapes how we experience a space or a process without ever drawing attention to itself. Here is why that matters, and what it takes to build it.

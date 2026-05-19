@@ -74,7 +74,6 @@ const ArticlePage = () => {
                 ))}
               </div>
 
-              <div className="mt-8 border-t" style={{ borderColor: 'var(--rule)' }} />
             </header>
 
             {/* Article body */}
