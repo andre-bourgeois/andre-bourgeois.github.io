@@ -54,10 +54,6 @@ const ArticlePage = () => {
                 </p>
               )}
 
-              <p className="text-xl leading-relaxed mb-6" style={{ color: 'var(--ink-2)' }}>
-                {article.excerpt}
-              </p>
-
               <div className="flex flex-wrap gap-2">
                 {article.tags.map(tag => (
                   <span
