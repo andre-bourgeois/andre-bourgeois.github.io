@@ -1,7 +1,7 @@
 ---
 title: Building the Platform Ecosystem
 subtitle: Why interoperability defines success in modern buildings
-date: 2026-02-05
+date: 2026-03-05
 tags: [Technology, Buildings, Platforms, Interoperability]
 excerpt: Most digital building failures are not technical, they are decisional. Four design decisions, made early, create the conditions for a building that actually delivers what it promised.
 ---
