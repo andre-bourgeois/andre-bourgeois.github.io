@@ -1,6 +1,6 @@
 ---
 title: The Rise of Platform Ecosystems
-subtitle: Understanding the Hybrid Nature of Modern Buildings
+subtitle: Understanding the hybrid nature of modern building
 date: 2026-02-02
 tags: [Smart Buildings, Technology Strategy, Platforms, Ecosystems]
 excerpt: Are modern buildings platforms or ecosystems? As technology advances and smart building deployments become more complex, the lines between these concepts continue to blur - and the answer may matter more than you think.
