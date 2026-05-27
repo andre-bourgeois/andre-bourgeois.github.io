@@ -3,7 +3,7 @@ title: Designing Invisible Technology
 subtitle: Why the best technology fades away, and what it takes to build it
 date: 2026-01-01
 tags: [Technology, Design, Product]
-excerpt: The best technology works so well we forget it is doing any work at all. Here is why that disappearance is the mark of good technology, and what it takes to build it.
+excerpt: The best technology works so well we forget it is doing any work at all. Here is why that disappearance is the mark of good technology, and what it takes to build it that way.
 ---
 
 When was the last time you thought about how your phone connects to the internet? Or how your favourite mapping app instantly recalculates a route when you take a wrong turn? Have you ever worried that you accidentally forgot your digital wallet at home?

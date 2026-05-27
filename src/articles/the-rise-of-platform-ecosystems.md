@@ -3,7 +3,7 @@ title: The Rise of Platform Ecosystems
 subtitle: Understanding the hybrid nature of modern buildings
 date: 2026-02-02
 tags: [Smart Buildings, Technology Strategy, Platforms, Ecosystems]
-excerpt: Are modern buildings platforms or ecosystems? As technology advances and smart building deployments become more complex, the lines between these concepts continue to blur - and the answer may matter more than you think.
+excerpt: Are modern buildings platforms or ecosystems? As technology advances and digital buildings become more complex, the lines between these concepts continue to blur.
 ---
 
 Are modern buildings platforms or ecosystems? This question has been on my mind frequently in the past several months as I've worked with clients and technology partners to bring isolated technologies together into comprehensive smart building deployments. As technology advances and smart building deployments become more complex, the lines between these concepts continue to blur.
