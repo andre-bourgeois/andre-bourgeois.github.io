@@ -1,6 +1,6 @@
 ﻿---
-title: Good Technology Leaves No Fingerprints
-subtitle: Why the best technology fades into the background, and what it takes to build it that way
+title: Designing Invisible Technology
+subtitle: Why the best technology fades away, and what it takes to build it that way
 date: 2026-01-01
 tags: [Technology, Design, Product]
 excerpt: The best technology works so well we forget it is doing any work at all. Here is why that disappearance is the mark of good technology, and what it takes to build it.
