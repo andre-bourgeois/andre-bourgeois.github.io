@@ -8,7 +8,7 @@ excerpt: Most digital building failures are not technical, they are decisional. 
 
 Each year, significant capital flows into new technology deployments around the world, much of it into new buildings or retrofits of existing ones.
 
-Each year, the media fills with stories about the newest smart buildings, the most ambitious smart city projects, and the scale of investment behind them.
+Each year, the media fills with stories about the newest digital buildings, the most ambitious smart city projects, and the scale of investment behind them.
 
 Each year, many of those projects quietly fail to deliver what they promised.
 

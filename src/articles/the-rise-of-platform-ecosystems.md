@@ -2,13 +2,13 @@
 title: The Rise of Platform Ecosystems
 subtitle: Understanding the hybrid nature of modern buildings
 date: 2026-02-02
-tags: [Smart Buildings, Technology Strategy, Platforms, Ecosystems]
+tags: [Digital Buildings, Technology Strategy, Platforms, Ecosystems]
 excerpt: Are modern buildings platforms or ecosystems? As technology advances and digital buildings become more complex, the lines between these concepts continue to blur.
 ---
 
-Are modern buildings platforms or ecosystems? This question has been on my mind frequently in the past several months as I've worked with clients and technology partners to bring isolated technologies together into comprehensive smart building deployments. As technology advances and smart building deployments become more complex, the lines between these concepts continue to blur.
+Are modern buildings platforms or ecosystems? This question has been on my mind frequently in the past several months as I've worked with clients and technology partners to bring isolated technologies together into comprehensive digital building deployments. As technology advances and digital building deployments become more complex, the lines between these concepts continue to blur.
 
-The answer to this question may be more important than you think. How we conceptualise buildings - as platforms, ecosystems, or something else entirely - directly influences vendor strategies, interoperability requirements, and ultimately, the success of smart buildings in the real world.
+The answer to this question may be more important than you think. How we conceptualise buildings - as platforms, ecosystems, or something else entirely - directly influences vendor strategies, interoperability requirements, and ultimately, the success of digital buildings in the real world.
 
 To answer this question properly, we first need to establish clear definitions for both of these terms.
 
@@ -29,7 +29,7 @@ Familiar examples of platforms include:
 - AWS/Azure/GCP (cloud)
 - Salesforce/SAP (enterprise software)
 
-From this perspective, we can view modern buildings as platforms given that they provide the core technology and infrastructure for many entities within a smart building. Their cabled and wireless infrastructure provides the foundation for communication across systems. The core building systems offer standardised interfaces that third-party applications can build upon. And the physical space itself becomes programmable, enabling interactions that adapt to occupant needs in real-time.
+From this perspective, we can view modern buildings as platforms given that they provide the core technology and infrastructure for many entities within a digital building. Their cabled and wireless infrastructure provides the foundation for communication across systems. The core building systems offer standardised interfaces that third-party applications can build upon. And the physical space itself becomes programmable, enabling interactions that adapt to occupant needs in real-time.
 
 ## What Is an Ecosystem?
 
@@ -60,4 +60,4 @@ Thankfully, they're not mutually exclusive. Modern buildings embody both. In iso
 
 The question isn't whether buildings are platforms or ecosystems. Buildings are platforms that host ecosystems - or more precisely, platform ecosystems where technical infrastructure enables organic human and organisational relationships to flourish.
 
-Understanding this duality matters because it shapes how we approach interoperability, retrofit strategy, and long-term value creation in smart buildings - each of which are explored in depth in some of my other articles.
+Understanding this duality matters because it shapes how we approach interoperability, retrofit strategy, and long-term value creation in digital buildings - each of which are explored in depth in some of my other articles.

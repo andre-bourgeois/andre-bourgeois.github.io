@@ -30,8 +30,8 @@ const ArticlesPage = () => {
                 Everything I've Written
               </h1>
               <p className="text-xl max-w-2xl" style={{ color: 'var(--ink-3)' }}>
-                A complete archive of my writing on frontier technology, smart buildings,
-                and the challenge of making complex systems work quietly in the real world.
+                An archive of everything written under my own name on emerging technology and how to meaningfully
+                make it work for us in the real world.
               </p>
             </div>
 

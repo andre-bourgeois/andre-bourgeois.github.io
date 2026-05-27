@@ -11,7 +11,7 @@ const Connect = () => {
         </h2>
         
         <p className="text-xl text-secondary-foreground/80 mb-12 leading-relaxed">
-          Whether you're a startup founder exploring smart building technology, 
+          Whether you're a startup founder exploring digital building technology, 
           a CTO planning your IoT strategy, or a business leader ready to transform 
           your spaces-I'd love to hear about your vision.
         </p>
