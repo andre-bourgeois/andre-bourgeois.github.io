@@ -2,7 +2,7 @@
 title: Building the Platform Ecosystem
 subtitle: Why interoperability defines success in modern buildings
 date: 2026-03-05
-tags: [Technology, Buildings, Platforms, Interoperability]
+tags: [Digital Buildings, Digital Transformation, Innovation Strategy, Internet of Things, Technology Leadership]
 excerpt: Most digital building failures are not technical, they are decisional. Four design decisions, made early, create the conditions for a building that actually delivers what it promised.
 ---
 
@@ -16,7 +16,7 @@ For building owners and operators, these failures are not just headlines. If wel
 
 Fortunately, there are ways to improve the odds. Not by spending more, but by focusing on the right things and making better technology decisions before a single cable is pulled or a line of code is written.
 
-As we’ve explored in previous articles [LINK], modern buildings are best understood as platform-ecosystem hybrids, or simply, platform ecosystems.
+As we’ve explored in [previous articles](https://andrebourgeois.me/articles/the-rise-of-platform-ecosystems), modern buildings are best understood as platform-ecosystem hybrids, or simply, platform ecosystems.
 
 A platform is the foundational technology or infrastructure that facilitates interactions and supports other products, services, and applications built on top of it. An ecosystem is a network of interconnected entities, companies, products, and users, whose relationships generate value greater than the sum of their parts.
 
