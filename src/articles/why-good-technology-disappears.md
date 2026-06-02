@@ -1,6 +1,6 @@
 ﻿---
 title: Designing Invisible Technology
-subtitle: Why the best technology fades away, and what it takes to build it
+subtitle: Why the best technology fades away, and how we can design for it.
 date: 2026-01-01
 tags: [Emerging Technology, Digital Transformation, Innovation Strategy, Internet of Things, Technology Leadership, ]
 excerpt: The best technology works so well we forget it is doing any work at all. Here is why that disappearance is the mark of good technology, and what it takes to build it that way.
