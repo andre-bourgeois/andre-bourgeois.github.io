@@ -1,5 +1,5 @@
 ﻿---
-title: Built to Last Forever, Obsolete by Tuesday
+title: Planning Against Obsolescence
 subtitle: How Shrinking Technology Lifecycles are Reshaping the Future of Retrofit
 date: 2026-04-02
 tags: [Digital Buildings, Innovation Strategy, Internet of Things, Industry Transformation]
