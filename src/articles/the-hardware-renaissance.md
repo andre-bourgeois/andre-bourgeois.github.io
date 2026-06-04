@@ -1,9 +1,9 @@
 ﻿---
 title: The Hardware Renaissance
-subtitle: Robots, rockets, rings, and robotaxis. Physical tech is having its moment.
+subtitle: Robots, rockets, rings, and robotaxis. Physical tech is having a moment.
 date: 2026-05-07
 tags: [Emerging Technology, Industry Transformation, Robotics, Space Economy, Startups, Wearables]
-excerpt: The world's most exciting companies used to just write code. Now, they're building things again.
+excerpt: For decades, the world's most exciting companies were just writing code. Now, they're building things again.
 ---
 
 If I asked you to think about a major technology company, what's the first one that comes to mind?
