@@ -21,11 +21,12 @@ async function generateOgImage() {
   const outPath  = path.join(DIST, 'og-card.png');
 
   const W = 1200, H = 627;
-  const LOGO_H = 320; // logo height inside the canvas
+  const LOGO_H = 520; // tall enough to stay crisp when LinkedIn scales the card down
 
-  // Resize logo to fit height, keeping aspect ratio
+  // Resize logo with Lanczos kernel then sharpen edges
   const logoResized = await sharp(logoPath)
-    .resize({ height: LOGO_H, fit: 'inside' })
+    .resize({ height: LOGO_H, fit: 'inside', kernel: sharp.kernel.lanczos3 })
+    .sharpen({ sigma: 0.6, m1: 1.0, m2: 0.5 })
     .toBuffer();
 
   const { width: lw, height: lh } = await sharp(logoResized).metadata();
@@ -36,7 +37,7 @@ async function generateOgImage() {
     create: { width: W, height: H, channels: 4, background: { r: 250, g: 250, b: 250, alpha: 1 } },
   })
     .composite([{ input: logoResized, left, top }])
-    .png()
+    .png({ compressionLevel: 9 })
     .toFile(outPath);
 
   console.log(`  ✓ og-card.png (${W}×${H})`);
