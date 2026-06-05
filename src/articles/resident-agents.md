@@ -1,5 +1,5 @@
 ﻿---
-title: The Resident Agent
+title: Resident Agents
 subtitle: If you own the building and the data, you should own the intelligence on top of it
 date: 2026-06-04
 tags: [Artificial Intelligence, Digital Buildings, Emerging Technology, Industry Transformation]
