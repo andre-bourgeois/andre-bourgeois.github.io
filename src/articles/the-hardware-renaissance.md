@@ -3,7 +3,7 @@ title: The Hardware Renaissance
 subtitle: Robots, rockets, rings, and robotaxis - physical tech is having a moment
 date: 2026-05-07
 tags: [Emerging Technology, Industry Transformation, Robotics, Space Economy, Startups, Wearables]
-excerpt: For decades, the world's largest and most exciting companies were just writing code. Lately, they've started building things again.
+excerpt: For decades, the world's largest and most exciting companies were just writing code. Lately, they've started building things again, in the real world.
 ---
 
 If I asked you to think about a major technology company, what's the first one that comes to mind?
