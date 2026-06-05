@@ -30,8 +30,8 @@ const ArticlesPage = () => {
                 Everything I've Written
               </h1>
               <p className="text-xl max-w-2xl" style={{ color: 'var(--ink-3)' }}>
-                An archive of everything written under my own name on emerging technology and how to meaningfully
-                make it work for us in the real world.
+                An archive of thing written under my own name on emerging technology and how to
+                make it work in the real world.
               </p>
             </div>
 
