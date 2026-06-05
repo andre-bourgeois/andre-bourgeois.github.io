@@ -5,20 +5,20 @@ const fs   = require('fs');
 const path = require('path');
 
 const SITE_URL    = 'https://andrebourgeois.me';
-const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
+const DEFAULT_IMAGE = `${SITE_URL}/og-card.png`;
 const DIST        = path.join(__dirname, '..', 'dist');
 const PUBLIC      = path.join(__dirname, '..', 'public');
 const ARTICLES_SRC = path.join(__dirname, '..', 'src', 'articles');
 
 // ---------------------------------------------------------------------------
-// 1. Generate og-image.png — logo centred on bone background, 1200×627
+// 1. Generate og-card.png — logo centred on bone background, 1200×627
 // ---------------------------------------------------------------------------
 async function generateOgImage() {
   const sharp = require('sharp');
   const logoPath = path.join(PUBLIC, 'logo.png');
-  // Write directly to dist/ — vite build already ran and copied the old public/og-image.png,
+  // Write directly to dist/ — vite build already ran and copied the old public/og-card.png,
   // so we must overwrite dist/ here to get the freshly generated dimensions into the deploy.
-  const outPath  = path.join(DIST, 'og-image.png');
+  const outPath  = path.join(DIST, 'og-card.png');
 
   const W = 1200, H = 627;
   const LOGO_H = 320; // logo height inside the canvas
@@ -39,7 +39,7 @@ async function generateOgImage() {
     .png()
     .toFile(outPath);
 
-  console.log(`  ✓ og-image.png (${W}×${H})`);
+  console.log(`  ✓ og-card.png (${W}×${H})`);
 }
 
 // ---------------------------------------------------------------------------
