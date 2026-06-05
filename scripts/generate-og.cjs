@@ -16,7 +16,9 @@ const ARTICLES_SRC = path.join(__dirname, '..', 'src', 'articles');
 async function generateOgImage() {
   const sharp = require('sharp');
   const logoPath = path.join(PUBLIC, 'logo.png');
-  const outPath  = path.join(PUBLIC, 'og-image.png');
+  // Write directly to dist/ — vite build already ran and copied the old public/og-image.png,
+  // so we must overwrite dist/ here to get the freshly generated dimensions into the deploy.
+  const outPath  = path.join(DIST, 'og-image.png');
 
   const W = 1200, H = 627;
   const LOGO_H = 320; // logo height inside the canvas
