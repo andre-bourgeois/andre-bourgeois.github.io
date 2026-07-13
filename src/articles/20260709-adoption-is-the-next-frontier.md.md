@@ -1,9 +1,9 @@
 ---
-title: Adoption is The Next Frontier... Again
+title: Adoption is The Next Frontier
 subtitle: Why winners in every technology boom are decided by adoption, not innovation
 date: 2026-07-09
 tags: [Artificial Intelligence, Digital Transformation, Innovation Strategy]
-excerpt: Every generation of technology follows the same arc: a wave of innovation is followed by a scramble for application, and a shakeout decides who survives; the AI industry is shaking.
+excerpt: Every generation of technology follows the same arc: a wave of innovation is followed by a scramble for application, and a shakeout decides who survives.
 ---
 
 Is adoption more important now than it was a few years ago? Is it more important now than it was decades ago? Yes, and no. You could argue that adoption is the most important aspect of technology, full stop. Why create something that won’t be used? Why create something that isn’t useful? At a point in time when most things can be done, the real question we should be asking is, “What should be done?”
