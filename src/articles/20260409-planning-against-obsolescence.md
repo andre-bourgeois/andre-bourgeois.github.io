@@ -1,7 +1,7 @@
 ﻿---
 title: Planning Against Obsolescence
 subtitle: How Shrinking Technology Lifecycles are Reshaping the Future of Retrofit
-date: 2026-04-02
+date: 2026-04-09
 tags: [Digital Buildings, Innovation Strategy, Internet of Things, Industry Transformation]
 excerpt: Modern buildings will outlast their technology many times over. The ones that age well will be designed for the retrofits to come, not just for the day they open. 
 ---
