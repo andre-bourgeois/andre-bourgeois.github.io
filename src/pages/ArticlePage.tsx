@@ -72,6 +72,34 @@ const ArticlePage = () => {
 
             </header>
 
+            {/* Cover image */}
+            <div
+              className="w-full mb-12 rounded-lg border overflow-hidden"
+              style={{
+                aspectRatio: '1200 / 627',
+                borderColor: 'var(--rule)',
+                boxShadow: 'var(--shadow-xl)',
+                background: 'var(--cream)',
+              }}
+            >
+              {article.image ? (
+                <img
+                  src={article.image}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <img
+                    src="/logo.png"
+                    alt=""
+                    className="object-contain"
+                    style={{ maxHeight: '35%', maxWidth: '50%' }}
+                  />
+                </div>
+              )}
+            </div>
+
             {/* Article body */}
             <div
               className="prose prose-lg max-w-none"

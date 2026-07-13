@@ -5,6 +5,7 @@ export interface ArticleMeta {
   date: string;
   tags: string[];
   excerpt: string;
+  image?: string;
 }
 
 export interface Article extends ArticleMeta {
@@ -52,6 +53,7 @@ function buildArticles(): Article[] {
         date: (meta.date as string) || '',
         tags: (meta.tags as string[]) || [],
         excerpt: (meta.excerpt as string) || '',
+        image: (meta.image as string) || undefined,
         content,
       };
     })
